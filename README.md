@@ -1,4 +1,5 @@
 # React Native PKCE Challenge
+[![Package version](https://img.shields.io/npm/v/react-native-pkce-challenge?style=for-the-badge)](https://www.npmjs.com/package/react-native-pkce-challenge)
 [![MIT license](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-hotpink.svg?style=for-the-badge)](https://github.com/drophive/react-native-pkce-challenge/pulls)
 
