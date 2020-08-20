@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Proof Key for Code Exchange (PKCE) challenge generator for React Native",
   "license": "MIT",
-  "homepage": "https://github.com/drophive/react-native-pkce-challenget#readme",
+  "homepage": "https://github.com/drophive/react-native-pkce-challenge#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/drophive/react-native-pkce-challenge.git"
