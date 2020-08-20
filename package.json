@@ -1,0 +1,31 @@
+{
+  "name": "react-native-pkce-challenge",
+  "version": "1.0.0",
+  "description": "Proof Key for Code Exchange (PKCE) challenge generator for React Native",
+  "license": "MIT",
+  "homepage": "https://github.com/drophive/react-native-pkce-challenget#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drophive/react-native-pkce-challenge.git"
+  },
+  "author": {
+    "name": "David Angulo",
+    "email": "hello@davidangulo.xyz",
+    "url": "https://www.davidangulo.xyz"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tap tests/"
+  },
+  "keywords": [
+    "PKCE",
+    "oauth2"
+  ],
+  "dependencies": {
+    "crypto-js": "3.3.0"
+  },
+  "devDependencies": {
+    "react-native-randombytes": "^3.5.3",
+    "tap": "^12.7.0"
+  }
+}
