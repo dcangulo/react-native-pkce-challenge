@@ -5,28 +5,39 @@
 
 Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 
-This module uses [`crypto.randomBytes`](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) for web and [`react-native-randombytes`](https://github.com/mvayngrib/react-native-randombytes) for native apps.
-
 ## Installation
-### Native (iOS / Android)
-```bash
-yarn add react-native-pkce-challenge react-native-randombytes
-cd ios; pod install; cd .. # iOS Only
-```
-
-### Web
+### Web / iOS / Android
 ```bash
 yarn add react-native-pkce-challenge
 ```
 
-## Usage
-```js
-import pkceChallenge from 'react-native-pkce-challenge'
+If you're going to use `asyncPkceChallenge` on **iOS/Android** you also need to do the following.
+```bash
+yarn add react-native-randombytes
 
-const challenge = await pkceChallenge()
+cd ios; pod install; cd .. # iOS Only
 ```
 
-It will return:
+## Usage
+### Asynchronous (Recommended for iOS/Android)
+```js
+import {asyncPkceChallenge} from 'react-native-pkce-challenge'
+
+const challenge = await asyncPkceChallenge()
+```
+
+The asynchronous module uses asynchronous [`crypto.randomBytes`](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) for web and [`react-native-randombytes`](https://github.com/mvayngrib/react-native-randombytes) for native apps.
+
+### Synchronous (Not recommended for iOS/Android)
+```js
+import {pkceChallenge} from 'react-native-pkce-challenge'
+
+const challenge = pkceChallenge()
+```
+
+The synchronous module uses synchronous [`crypto.randomBytes`](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) for web and [`CryptoJS.lib.WordArray.random`](https://cryptojs.gitbook.io/docs/) for native apps.
+
+The constant `challenge` will hold an object like the following:
 ```js
 {
   codeChallenge: 'XsRstqNrXT76Iop3uMoyyCQmaGthJbKKJwXBSoQXaRk',
@@ -34,10 +45,16 @@ It will return:
 }
 ```
 
-## Test
-```bash
-yarn test
-```
+### Why asynchronous is recommended for iOS/Android?
+[CryptoJS (version 3.3.0)](https://github.com/brix/crypto-js/tree/3.3.0) uses `Math.random()` which gives an output that is not cryptographically secure. [Click this for more info.](https://security.stackexchange.com/questions/181580/why-is-math-random-not-designed-to-be-cryptographically-secure.)
+
+In web this is not a problem since we are using [`crypto.randomBytes`](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) which can give us cryptographically secure values.
+
+## Upgrading
+See [UPGRADING.md](UPGRADING.md)
+
+## Changelogs
+See [CHANGELOGS.md](CHANGELOGS.md)
 
 ## References
 * https://github.com/crouchcd/pkce-challenge
