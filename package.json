@@ -22,7 +22,7 @@
     "oauth2"
   ],
   "dependencies": {
-    "crypto-js": "3.3.0"
+    "crypto-js": "4.0.0"
   },
   "devDependencies": {
     "react-native-randombytes": "^3.5.3",
