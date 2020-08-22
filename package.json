@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "react-native-randombytes": "^3.5.3",
-    "tap": "^12.7.0"
+    "tap": "^14.10.8"
   }
 }
