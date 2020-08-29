@@ -1,11 +1,12 @@
-const randomBytes = require('react-native').NativeModules.RNRandomBytes.randomBytes
+// eslint-disable-next-line
+const { randomBytes } = require('react-native').NativeModules.RNRandomBytes;
 
 function generateRandomBytes() {
-  return new Promise(function(resolve, reject) {
-    randomBytes(96, function(err, bytes) {
-      resolve(bytes)
-    })
-  })
+  return new Promise((resolve) => {
+    randomBytes(96, (err, bytes) => {
+      resolve(bytes);
+    });
+  });
 }
 
-module.exports = generateRandomBytes
+module.exports = generateRandomBytes;

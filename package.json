@@ -1,6 +1,6 @@
 {
   "name": "react-native-pkce-challenge",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Proof Key for Code Exchange (PKCE) challenge generator for React Native",
   "license": "MIT",
   "homepage": "https://github.com/drophive/react-native-pkce-challenge#readme",
@@ -15,7 +15,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "tap tests/"
+    "test": "tap tests",
+    "lint": "eslint ."
   },
   "keywords": [
     "PKCE",
@@ -25,6 +26,9 @@
     "crypto-js": "3.3.0"
   },
   "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "react-native-randombytes": "^3.5.3",
     "tap": "^14.10.8"
   }

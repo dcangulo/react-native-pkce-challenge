@@ -56,6 +56,9 @@ See [UPGRADING.md](UPGRADING.md)
 ## Changelogs
 See [CHANGELOGS.md](CHANGELOGS.md)
 
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
 ## References
 * https://github.com/crouchcd/pkce-challenge
 * https://gist.github.com/tonyxu-io/21eb57ab2a4aeb2a3ee10f77542abe64

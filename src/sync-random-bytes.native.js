@@ -1,10 +1,10 @@
-const CryptoJS = require('crypto-js')
+const CryptoJS = require('crypto-js');
 
 function generateRandomBytes() {
-  const buffer = CryptoJS.lib.WordArray.random(96)
-  const bytes = buffer.toString(CryptoJS.enc.Base64)
+  const buffer = CryptoJS.lib.WordArray.random(96);
+  const bytes = buffer.toString(CryptoJS.enc.Base64);
 
-  return bytes
+  return bytes;
 }
 
-module.exports = generateRandomBytes
+module.exports = generateRandomBytes;

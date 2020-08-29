@@ -1,13 +1,13 @@
-const randomBytes = require('crypto').randomBytes
+const { randomBytes } = require('crypto');
 
 function generateRandomBytes() {
-  return new Promise(function(resolve, reject) {
-    randomBytes(96, function(err, buffer) {
-      const bytes = buffer.toString('base64')
+  return new Promise((resolve) => {
+    randomBytes(96, (err, buffer) => {
+      const bytes = buffer.toString('base64');
 
-      resolve(bytes)
-    })
-  })
+      resolve(bytes);
+    });
+  });
 }
 
-module.exports = generateRandomBytes
+module.exports = generateRandomBytes;
