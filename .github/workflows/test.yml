@@ -1,8 +1,8 @@
-name: tap
+name: test
 on: [push, pull_request]
 jobs:
-  tap:
-    name: tap
+  test:
+    name: test
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
@@ -11,8 +11,11 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: '12'
-          check-latest: true
       - name: Install dependencies
-        run: npm install
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
       - name: Run tests
-        run: npm test
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: test
