@@ -6,10 +6,10 @@
 Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 
 ## API Compatibility
-Method                  |iOS                  |Android            |Web                |Windows             |macOS
-:-----------------------|:--------------------|:------------------|:------------------|:-------------------|:-------------------
-`asyncPkceChallenge`    |:white_check_mark:   |:white_check_mark: |:white_check_mark: |:x:                 |:x:
-`pkceChallenge`         |:white_check_mark:   |:white_check_mark: |:white_check_mark: |:white_check_mark:  |:white_check_mark:
+Method               |iOS                |Android            |Web                |Windows            |macOS              |Expo
+:--------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
+`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:x:                |:x:                |:x:
+`pkceChallenge`      |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
 
 ## Installation
 ```bash
