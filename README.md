@@ -8,7 +8,7 @@ Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 ## API Compatibility
 Method               |iOS                |Android            |Web                |Windows            |macOS              |Expo
 :--------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
-`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:x:                |:x:                |:x:
+`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:x:                |:x:                |:white_check_mark:
 `pkceChallenge`      |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
 
 ## Installation
@@ -16,6 +16,13 @@ Method               |iOS                |Android            |Web               
 yarn add react-native-pkce-challenge
 npx pod-install # iOS Only
 ```
+
+## Installation (Expo)
+```bash
+expo install react-native-pkce-challenge expo-random buffer
+npx pod-install # iOS Only
+```
+> :bulb: If you use the Expo managed workflow you will see "CocoaPods is not supported in this project" - this is fine, it's not necessary.
 
 ## Usage
 ### Asynchronous (Recommended for iOS / Android)
@@ -43,7 +50,9 @@ The constant `challenge` will hold an object like the following:
 ### Why asynchronous is recommended for iOS / Android?
 [CryptoJS (version 3.3.0)](https://github.com/brix/crypto-js/tree/3.3.0) uses `Math.random()` which returns a value that is not cryptographically secure as native crypto module is not supported in React Native. In asynchronous we use native codes (Java / Objective-C) to generate cryptographically secure values.
 
-In web this is not a problem since we are using [native crypto module](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) which can give us cryptographically secure values.
+In web this is not a problem since we are using [`crypto.randomBytes`](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) which can give us cryptographically secure values.
+
+In Expo this is also not a problem since we are using [`expo-random`](https://docs.expo.io/versions/latest/sdk/random/), an equivalent of `crypto.randomBytes` for Expo projects.
 
 ## Upgrading
 See [UPGRADING.md](UPGRADING.md)
