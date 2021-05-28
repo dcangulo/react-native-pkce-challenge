@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 const { NativeModules } = require('react-native');
 
 function generateRandomBytes() {
