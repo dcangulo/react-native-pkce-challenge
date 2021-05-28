@@ -1,10 +1,7 @@
 const CryptoJS = require('crypto-js');
 
 function base64UrlEncode(str) {
-  return str
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_')
-    .replace(/=/g, '');
+  return str.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
 }
 
 function generateChallenge(verifier) {

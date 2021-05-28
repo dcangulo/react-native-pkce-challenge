@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "21:00"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: crypto-js
+    versions:
+    - "> 3.3.0"
+  - dependency-name: tap
+    versions:
+    - 15.0.0
+    - 15.0.1
+    - 15.0.4
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: eslint
+    versions:
+    - 7.18.0
+    - 7.21.0
+    - 7.22.0
+    - 7.23.0

@@ -11,6 +11,7 @@ module.exports = {
     ecmaVersion: 12
   },
   rules: {
-    'comma-dangle': 0
+    'comma-dangle': 0,
+    'import/no-unresolved': 0
   }
 };
