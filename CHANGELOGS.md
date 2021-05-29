@@ -1,4 +1,7 @@
 # Changelogs
+## 3.1.0 (2020-10-10)
+* Added macOS `asyncPkceChallenge` support.
+
 ## 3.0.0 (2020-10-09)
 * Removed [`react-native-randombyes`](https://github.com/mvayngrib/react-native-randombytes) as a dependency.
 * Created a bridge to (Java / Objective-C) to generate cryptographically secure randombytes.

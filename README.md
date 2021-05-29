@@ -8,7 +8,7 @@ Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 ## API Compatibility
 Method               |iOS                |Android            |Web                |Windows            |macOS              |Expo
 :--------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
-`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:x:                |:x:                |:white_check_mark:
+`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:x:                |:white_check_mark: |:white_check_mark:
 `pkceChallenge`      |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
 
 ## Installation
@@ -25,14 +25,14 @@ npx pod-install # iOS Only
 > :bulb: If you use the Expo managed workflow you will see "CocoaPods is not supported in this project" - this is fine, it's not necessary.
 
 ## Usage
-### Asynchronous (Recommended for iOS / Android)
+### Asynchronous (Recommended for iOS / Android / macOS)
 ```js
 import { asyncPkceChallenge } from 'react-native-pkce-challenge';
 
 const challenge = await asyncPkceChallenge();
 ```
 
-### Synchronous (Not recommended for iOS / Android)
+### Synchronous (Not recommended for iOS / Android / macOS)
 ```js
 import { pkceChallenge } from 'react-native-pkce-challenge';
 
@@ -47,10 +47,12 @@ The constant `challenge` will hold an object like the following:
 }
 ```
 
-### Why asynchronous is recommended for iOS / Android?
-[CryptoJS (version 3.3.0)](https://github.com/brix/crypto-js/tree/3.3.0) uses `Math.random()` which returns a value that is not cryptographically secure as native crypto module is not supported in React Native. In asynchronous we use native codes (Java / Objective-C) to generate cryptographically secure values.
+### Why `asyncPkceChallenge` is recommended for native apps (iOS/Android/ macOS)?
+We use [CryptoJS (v3.3.0)](https://github.com/brix/crypto-js/tree/3.3.0)'s [`CryptoJS.lib.WordArray.random`](https://github.com/brix/crypto-js/blob/3.3.0/crypto-js.js#L304) which uses `Math.random()` in generating **synchronous** randombytes on native apps (iOS/Android/Windows/macOS). This returns a value that is not cryptographically secure.
 
-In web this is not a problem since we are using [`crypto.randomBytes`](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) which can give us cryptographically secure values.
+In **asynchronous**, we are using native codes (Java/Objective-C) to generate cryptographically secure randombytes.
+
+In web, we have a [native crypto module](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback) that supports both asynchronous and synchronous which can give us cryptographically secure values.
 
 In Expo this is also not a problem since we are using [`expo-random`](https://docs.expo.io/versions/latest/sdk/random/), an equivalent of `crypto.randomBytes` for Expo projects.
 

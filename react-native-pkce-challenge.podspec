@@ -7,8 +7,9 @@ Pod::Spec.new do |spec|
   spec.license = package['license']
   spec.homepage = package['homepage']
   spec.author = { package['author']['name'] => package['author']['email'] }
-  spec.platform = :ios, '9.0'
+  spec.platforms = { ios: '9.0', osx: '10.13' }
   spec.source = { git: package['repository']['url'], tag: "v#{spec.version}" }
-  spec.source_files = 'ios/*.{h,m}'
+  spec.ios.source_files = 'ios/*.{h,m}'
+  spec.osx.source_files = 'macos/*.{h,m}'
   spec.dependency 'React-Core'
 end
