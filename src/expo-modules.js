@@ -25,7 +25,7 @@ try {
   // eslint-disable-next-line no-empty
 } catch { }
 
-export {
+module.exports = {
   Buffer,
   getRandomBytes,
   getRandomBytesAsync,
