@@ -3,3 +3,4 @@ node_modules
 .nyc_output
 project.xcworkspace
 xcuserdata
+android/.gradle
