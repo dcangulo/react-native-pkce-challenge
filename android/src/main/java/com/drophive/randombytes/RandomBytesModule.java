@@ -1,4 +1,4 @@
-package com.drophive.randombytes;
+package com.dcangulo.randombytes;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

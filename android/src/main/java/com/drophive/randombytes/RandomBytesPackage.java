@@ -1,4 +1,4 @@
-package com.drophive.randombytes;
+package com.dcangulo.randombytes;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
