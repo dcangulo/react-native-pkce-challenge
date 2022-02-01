@@ -57,4 +57,4 @@ See [CHANGELOGS.md](CHANGELOGS.md)
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
-Copyright © 2020 David Angulo, released under the MIT license, see [LICENSE](LICENSE).
+Copyright © 2022 David Angulo, released under the MIT license, see [LICENSE](LICENSE).
