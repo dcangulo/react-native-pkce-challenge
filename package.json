@@ -1,6 +1,6 @@
 {
   "name": "react-native-pkce-challenge",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Proof Key for Code Exchange (PKCE) challenge generator for React Native",
   "license": "MIT",
   "homepage": "https://github.com/dcangulo/react-native-pkce-challenge",

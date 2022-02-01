@@ -1,6 +1,14 @@
 # Changelogs
+
+## 3.2.0 (2022-02-01)
+* Migrate `.expo.js` files to support Expo SDK >= 40.
+* Updated tests that uses deprecated methods.
+* Updated eslint config.
+* Added commit linter.
+
 ## 3.1.0 (2020-10-10)
 * Added macOS `asyncPkceChallenge` support.
+* Added Expo support.
 
 ## 3.0.0 (2020-10-09)
 * Removed [`react-native-randombyes`](https://github.com/mvayngrib/react-native-randombytes) as a dependency.
