@@ -13,7 +13,7 @@ function pkceChallenge() {
 
   return {
     codeChallenge: challenge,
-    codeVerifier: verifier
+    codeVerifier: verifier,
   };
 }
 

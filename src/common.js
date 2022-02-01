@@ -12,5 +12,5 @@ function generateChallenge(verifier) {
 
 module.exports = {
   base64UrlEncode,
-  generateChallenge
+  generateChallenge,
 };

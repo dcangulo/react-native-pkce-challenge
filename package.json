@@ -16,7 +16,8 @@
   "main": "index.js",
   "scripts": {
     "test": "tap tests",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky install"
   },
   "keywords": [
     "PKCE",
@@ -26,9 +27,12 @@
     "crypto-js": "3.3.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "husky": "^7.0.4",
     "tap": "^15.0.2"
   }
 }

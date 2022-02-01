@@ -3,5 +3,5 @@ const pkceChallenge = require('./src/sync-pkce-challenge');
 
 module.exports = {
   asyncPkceChallenge,
-  pkceChallenge
+  pkceChallenge,
 };

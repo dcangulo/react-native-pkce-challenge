@@ -16,7 +16,7 @@ function asyncPkceChallenge() {
 
       resolve({
         codeChallenge: challenge,
-        codeVerifier: verifier
+        codeVerifier: verifier,
       });
     });
   });
