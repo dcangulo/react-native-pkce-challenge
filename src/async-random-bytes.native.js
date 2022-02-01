@@ -1,7 +1,5 @@
 const { NativeModules } = require('react-native');
-const { getRandomBytesAsync } = require('expo-random');
-const { Buffer } = require('buffer');
-const isExpo = require('./is-expo');
+const { isExpo, getRandomBytesAsync, Buffer } = require('./expo-modules');
 
 function generateRandomBytes() {
   return new Promise((resolve) => {

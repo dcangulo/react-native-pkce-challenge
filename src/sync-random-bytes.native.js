@@ -1,7 +1,5 @@
 const CryptoJS = require('crypto-js');
-const { getRandomBytes } = require('expo-random');
-const { Buffer } = require('buffer');
-const isExpo = require('./is-expo');
+const { isExpo, getRandomBytes, Buffer } = require('./expo-modules');
 
 function generateRandomBytes() {
   if (isExpo) {
