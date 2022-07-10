@@ -1,5 +1,5 @@
 const { test } = require('tap');
-const { asyncPkceChallenge } = require('../index');
+const { asyncPkceChallenge } = require('../lib/commonjs');
 
 test('Verifier length must be 128 characters', async (t) => {
   const { codeVerifier } = await asyncPkceChallenge();

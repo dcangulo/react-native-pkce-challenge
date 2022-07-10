@@ -1,9 +1,11 @@
-const CryptoJS = require('crypto-js');
-const { isExpo, getRandomBytes, Buffer } = require('./expo-modules');
+import CryptoJS from 'crypto-js';
+import { isExpo, getRandomBytes, Buffer } from '../utils/expo-modules';
 
-function generateRandomBytes() {
+export default function generateRandomBytes(): string {
   if (isExpo) {
+    // @ts-ignore
     const u8 = getRandomBytes(96);
+    // @ts-ignore
     const buffer = Buffer.from(u8);
     const bytes = buffer.toString('base64');
 
@@ -15,5 +17,3 @@ function generateRandomBytes() {
 
   return bytes;
 }
-
-module.exports = generateRandomBytes;

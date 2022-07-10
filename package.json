@@ -1,9 +1,30 @@
 {
   "name": "react-native-pkce-challenge",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Proof Key for Code Exchange (PKCE) challenge generator for React Native",
-  "license": "MIT",
-  "homepage": "https://github.com/dcangulo/react-native-pkce-challenge",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "types": "lib/typescript/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "react-native-pkce-challenge.podspec"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts",
+    "prepare": "husky install; bob build",
+    "test": "tap tests",
+    "typescript": "tsc --noEmit"
+  },
+  "keywords": [
+    "react-native",
+    "PKCE",
+    "oauth2"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dcangulo/react-native-pkce-challenge.git"
@@ -13,30 +34,40 @@
     "email": "hello@davidangulo.xyz",
     "url": "https://www.davidangulo.xyz"
   },
-  "main": "index.js",
-  "scripts": {
-    "test": "tap tests",
-    "lint": "eslint .",
-    "prepare": "husky install"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcangulo/react-native-pkce-challenge/issues"
   },
-  "keywords": [
-    "PKCE",
-    "oauth2"
-  ],
+  "homepage": "https://github.com/dcangulo/react-native-pkce-challenge",
   "dependencies": {
     "crypto-js": "3.3.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.1.0",
-    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/crypto-js": "^4.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
     "eslint": "^8.8.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.22.0",
-    "husky": "^7.0.4",
-    "tap": "^15.0.2"
+    "husky": "^8.0.1",
+    "react-native-builder-bob": "^0.18.3",
+    "tap": "^15.0.2",
+    "typescript": "^4.5.2"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }

@@ -1,10 +1,13 @@
-const { NativeModules } = require('react-native');
-const { isExpo, getRandomBytesAsync, Buffer } = require('./expo-modules');
+// @ts-ignore
+import { NativeModules } from 'react-native';
+import { isExpo, getRandomBytesAsync, Buffer } from '../utils/expo-modules';
 
-function generateRandomBytes() {
-  return new Promise((resolve) => {
+export default function generateRandomBytes() {
+  return new Promise<string>((resolve) => {
     if (isExpo) {
+      // @ts-ignore
       getRandomBytesAsync(96).then((u8) => {
+        // @ts-ignore
         const buffer = Buffer.from(u8);
         const bytes = buffer.toString('base64');
 
@@ -15,5 +18,3 @@ function generateRandomBytes() {
     }
   });
 }
-
-module.exports = generateRandomBytes;
