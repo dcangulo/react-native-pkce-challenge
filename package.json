@@ -9,7 +9,15 @@
   "source": "src/index",
   "files": [
     "src",
-    "lib"
+    "lib",
+    "android",
+    "ios",
+    "react-native-pkce-challenge.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
   ],
   "scripts": {
     "lint": "eslint . --ext .js,.ts",
