@@ -1,5 +1,8 @@
 # Changelogs
 
+## 4.0.0 (2022-07-10)
+* Rewrite to TypeScript.
+
 ## 3.2.0 (2022-02-01)
 * Migrate `.expo.js` files to support Expo SDK >= 40.
 * Updated tests that uses deprecated methods.

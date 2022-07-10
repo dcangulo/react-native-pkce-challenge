@@ -20,9 +20,8 @@ npx pod-install # iOS Only
 ## Installation (Expo)
 ```bash
 expo install react-native-pkce-challenge expo-random buffer
-npx pod-install # iOS Only
 ```
-> :bulb: If you use the Expo managed workflow you will see "CocoaPods is not supported in this project" - this is fine, it's not necessary.
+> :bulb: If you use Expo you might not need this package. See: https://docs.expo.dev/versions/latest/sdk/auth-session/
 
 ## Usage
 ### Asynchronous (Recommended)
@@ -52,9 +51,6 @@ See [UPGRADING.md](UPGRADING.md)
 
 ## Changelogs
 See [CHANGELOGS.md](CHANGELOGS.md)
-
-## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 Copyright © 2022 David Angulo, released under the MIT license, see [LICENSE](LICENSE).

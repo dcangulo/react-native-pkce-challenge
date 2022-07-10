@@ -3,13 +3,13 @@
  */
 
 // eslint-disable-next-line import/no-mutable-exports
-let Buffer = null;
+let Buffer: null | Buffer = null;
 // eslint-disable-next-line import/no-mutable-exports
-let getRandomBytes = null;
+let getRandomBytes: null | ((byteCount: number) => Uint8Array) = null;
 // eslint-disable-next-line import/no-mutable-exports
-let getRandomBytesAsync = null;
+let getRandomBytesAsync: null | ((byteCount: number) => Promise<Uint8Array>) = null;
 // eslint-disable-next-line import/no-mutable-exports
-let isExpo = false;
+let isExpo: boolean = false;
 
 try {
   // eslint-disable-next-line global-require
@@ -25,7 +25,7 @@ try {
   // eslint-disable-next-line no-empty
 } catch { }
 
-module.exports = {
+export {
   Buffer,
   getRandomBytes,
   getRandomBytesAsync,

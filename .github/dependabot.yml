@@ -1,12 +1,21 @@
 version: 2
 updates:
-- package-ecosystem: npm
+- package-ecosystem: "github-actions"
   directory: "/"
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "saturday"
     time: "04:00"
+    timezone: "Asia/Manila"
+- package-ecosystem: "npm"
+  directory: "/"
+  schedule:
+    interval: "weekly"
+    day: "saturday"
+    time: "04:00"
+    timezone: "Asia/Manila"
   open-pull-requests-limit: 99
   ignore:
-  - dependency-name: crypto-js
+  - dependency-name: "crypto-js"
     versions:
     - "> 3.3.0"
