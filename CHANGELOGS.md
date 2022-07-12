@@ -1,5 +1,8 @@
 # Changelogs
 
+# 4.0.1 (2022-07-12)
+* Fixed missing `macos` files.
+
 ## 4.0.0 (2022-07-10)
 * Rewrite to TypeScript.
 
