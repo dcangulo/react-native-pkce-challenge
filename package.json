@@ -11,6 +11,7 @@
     "src",
     "lib",
     "android",
+    "cpp",
     "ios",
     "macos",
     "react-native-pkce-challenge.podspec"
@@ -24,7 +25,8 @@
   "keywords": [
     "react-native",
     "PKCE",
-    "oauth2"
+    "oauth2",
+    "jsi"
   ],
   "repository": {
     "type": "git",
