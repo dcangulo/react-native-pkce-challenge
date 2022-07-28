@@ -6,6 +6,8 @@ add_library(
   randombytes
   SHARED
   ../../react-native/ReactCommon/jsi/jsi/jsi.cpp
+  ../cpp/base64.cpp
+  ../cpp/base64.h
   ../cpp/random-bytes.cpp
   ./cpp-adapter.cpp
 )
