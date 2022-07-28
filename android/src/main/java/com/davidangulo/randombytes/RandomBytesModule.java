@@ -1,27 +1,40 @@
 package com.davidangulo.randombytes;
 
+import androidx.annotation.NonNull;
+
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
-import java.security.SecureRandom;
-import android.util.Base64;
 
+@ReactModule(name = RandomBytesModule.NAME)
 public class RandomBytesModule extends ReactContextBaseJavaModule {
+  public static final String NAME = "RandomBytes";
+  private native void nativeInstall(long jsiPtr, String docDir);
+
   public RandomBytesModule(ReactApplicationContext reactContext) {
     super(reactContext);
   }
 
   @Override
+  @NonNull
   public String getName() {
-    return "RandomBytes";
+    return NAME;
   }
 
-  @ReactMethod
-  public void randomBytes(Callback callback) {
-    byte[] bytes = new byte[96];
-    SecureRandom secureRandom = new SecureRandom();
-    secureRandom.nextBytes(bytes);
-    callback.invoke(Base64.encodeToString(bytes, Base64.NO_WRAP));
+  @ReactMethod(isBlockingSynchronousMethod = true)
+  public boolean install() {
+    try {
+      System.loadLibrary("cpp");
+
+      ReactApplicationContext context = getReactApplicationContext();
+      nativeInstall(
+        context.getJavaScriptContextHolder().get(),
+        context.getFilesDir().getAbsolutePath()
+      );
+      return true;
+    } catch (Exception exception) {
+      return false;
+    }
   }
 }

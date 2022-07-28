@@ -1,5 +1,6 @@
 // @ts-ignore
-import { NativeModules } from 'react-native';
+import { Platform } from 'react-native';
+import CryptoJS from 'crypto-js';
 import { isExpo, getRandomBytesAsync, Buffer } from '../utils/expo-modules';
 
 export default function generateRandomBytes() {
@@ -14,7 +15,18 @@ export default function generateRandomBytes() {
         resolve(bytes);
       });
     } else {
-      NativeModules?.RandomBytes?.randomBytes(resolve);
+      const bytes = Platform.select({
+        ios: () => (global as any).randomBytes(),
+        android: () => (global as any).randomBytes(),
+        default: () => {
+          const buffer = CryptoJS.lib.WordArray.random(96);
+          const bytes = buffer.toString(CryptoJS.enc.Base64);
+
+          return bytes;
+        },
+      })();
+
+      resolve(bytes);
     }
   });
 }
