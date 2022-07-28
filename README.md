@@ -8,8 +8,15 @@ Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 ## API Compatibility
 Method               |iOS                |Android            |Web                |Windows            |macOS              |Expo
 :--------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
-`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:x:                |:white_check_mark: |:white_check_mark:
+`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
 `pkceChallenge`      |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
+
+## Under the hood
+Method               |iOS                |Android            |Web                |Windows            |macOS              |Expo
+:--------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
+`asyncPkceChallenge` |SecRandomCopyBytes |SecRandomCopyBytes |crypto.randombytes |CryptoJS.lib.WordArray.random                |SecRandomCopyBytes |expo-random
+`pkceChallenge`      |SecRandomCopyBytes |SecRandomCopyBytes |crypto.randombytes |CryptoJS.lib.WordArray.random |SecRandomCopyBytes |expo-random
+
 
 ## Installation
 ```bash
@@ -21,10 +28,9 @@ npx pod-install # iOS Only
 ```bash
 expo install react-native-pkce-challenge expo-random buffer
 ```
-> :bulb: If you use Expo you might not need this package. See: https://docs.expo.dev/versions/latest/sdk/auth-session/
 
 ## Usage
-### Asynchronous (Recommended)
+### Asynchronous
 ```js
 import { asyncPkceChallenge } from 'react-native-pkce-challenge';
 
