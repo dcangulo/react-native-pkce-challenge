@@ -1,7 +1,7 @@
 #include "random-bytes.h"
 #include "base64.h"
+#include "randombytes.h"
 #include <jsi/jsi.h>
-#include <Security/SecRandom.h>
 #include <vector>
 
 using namespace facebook::jsi;
@@ -20,16 +20,16 @@ namespace randombytes
                                                            const Value *arguments,
                                                            size_t count) -> Value
                                                         {
-                                                          vector<uint8_t> randomBytes(96, 0);
-                                                          SecRandomCopyBytes(kSecRandomDefault,
-                                                                             randomBytes.size(),
-                                                                             &randomBytes[0]);
-                                                          string randomBytes = base64_encode(&randomBytes[0],
-                                                                                             randomBytes.size());
+                                                          vector<uint8_t> buffer(96, 0);
+                                                          randombytes(&buffer[0],
+                                                                      buffer.size());
+
+                                                          string encodedData = base64_encode(&buffer[0],
+                                                                                             buffer.size());
 
                                                           return Value(runtime,
                                                                        String::createFromUtf8(runtime,
-                                                                                              randomBytes));
+                                                                                              encodedData));
                                                         });
 
     jsiRuntime.global().setProperty(jsiRuntime, "randomBytes", move(randomBytes));

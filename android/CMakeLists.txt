@@ -10,6 +10,8 @@ add_library(
   ../cpp/base64.h
   ../cpp/random-bytes.cpp
   ../cpp/random-bytes.h
+  ../cpp/randombytes.c
+  ../cpp/randombytes.h
   ./cpp-adapter.cpp
 )
 
