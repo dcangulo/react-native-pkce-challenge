@@ -1,7 +1,7 @@
 #include <jsi/jsilib.h>
 #include <jsi/jsi.h>
 
-namespace randombytes
+namespace pkcechallenge
 {
   void install(facebook::jsi::Runtime &jsiRuntime);
 }

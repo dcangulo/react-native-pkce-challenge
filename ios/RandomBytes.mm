@@ -2,7 +2,7 @@
 #import <React/RCTBridge+Private.h>
 #import <React/RCTUtils.h>
 #import <jsi/jsi.h>
-#import "random-bytes.h"
+#import "pkce-challenge.h"
 
 @implementation RandomBytes
 
@@ -25,7 +25,7 @@ RCT_EXPORT_MODULE();
   RCTCxxBridge *cxxBridge = (RCTCxxBridge *)self.bridge;
 
   if (cxxBridge.runtime) {
-    randombytes::install(*(facebook::jsi::Runtime *)cxxBridge.runtime);
+    pkcechallenge::install(*(facebook::jsi::Runtime *)cxxBridge.runtime);
   }
 }
 

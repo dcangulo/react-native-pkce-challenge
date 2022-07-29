@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5DBE5CDC2893A1A300C3D3E7 /* randombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE5CDA2893A1A200C3D3E7 /* randombytes.c */; };
+		5DBE5CDF2893A50700C3D3E7 /* pkce-challenge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE5CDD2893A50700C3D3E7 /* pkce-challenge.cpp */; };
 		5DD5BD72289300C00017AF43 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5BD71289300C00017AF43 /* base64.cpp */; };
 		5DE46CD12892FA0C00F1B1EC /* RandomBytes.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DE46CD02892FA0C00F1B1EC /* RandomBytes.mm */; };
-		5DE46CD52892FA1C00F1B1EC /* random-bytes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DE46CD42892FA1C00F1B1EC /* random-bytes.cpp */; };
 		73EEC93D1BFE4B1D00D468EB /* RandomBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73EEC93C1BFE4B1D00D468EB /* RandomBytes.h */; };
 /* End PBXBuildFile section */
 
@@ -30,11 +30,11 @@
 /* Begin PBXFileReference section */
 		5DBE5CDA2893A1A200C3D3E7 /* randombytes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = randombytes.c; path = ../cpp/randombytes.c; sourceTree = "<group>"; };
 		5DBE5CDB2893A1A200C3D3E7 /* randombytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = randombytes.h; path = ../cpp/randombytes.h; sourceTree = "<group>"; };
+		5DBE5CDD2893A50700C3D3E7 /* pkce-challenge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "pkce-challenge.cpp"; path = "../cpp/pkce-challenge.cpp"; sourceTree = "<group>"; };
+		5DBE5CDE2893A50700C3D3E7 /* pkce-challenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "pkce-challenge.h"; path = "../cpp/pkce-challenge.h"; sourceTree = "<group>"; };
 		5DD5BD70289300C00017AF43 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = ../cpp/base64.h; sourceTree = "<group>"; };
 		5DD5BD71289300C00017AF43 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = base64.cpp; path = ../cpp/base64.cpp; sourceTree = "<group>"; };
 		5DE46CD02892FA0C00F1B1EC /* RandomBytes.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RandomBytes.mm; sourceTree = "<group>"; };
-		5DE46CD32892FA1C00F1B1EC /* random-bytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "random-bytes.h"; path = "../cpp/random-bytes.h"; sourceTree = "<group>"; };
-		5DE46CD42892FA1C00F1B1EC /* random-bytes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "random-bytes.cpp"; path = "../cpp/random-bytes.cpp"; sourceTree = "<group>"; };
 		73EEC9391BFE4B1D00D468EB /* libRandomBytes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRandomBytes.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EEC93C1BFE4B1D00D468EB /* RandomBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomBytes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,12 +55,12 @@
 			children = (
 				73EEC93C1BFE4B1D00D468EB /* RandomBytes.h */,
 				5DE46CD02892FA0C00F1B1EC /* RandomBytes.mm */,
-				5DE46CD42892FA1C00F1B1EC /* random-bytes.cpp */,
-				5DE46CD32892FA1C00F1B1EC /* random-bytes.h */,
 				5DD5BD71289300C00017AF43 /* base64.cpp */,
 				5DD5BD70289300C00017AF43 /* base64.h */,
 				5DBE5CDA2893A1A200C3D3E7 /* randombytes.c */,
 				5DBE5CDB2893A1A200C3D3E7 /* randombytes.h */,
+				5DBE5CDD2893A50700C3D3E7 /* pkce-challenge.cpp */,
+				5DBE5CDE2893A50700C3D3E7 /* pkce-challenge.h */,
 				73EEC93A1BFE4B1D00D468EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE46CD52892FA1C00F1B1EC /* random-bytes.cpp in Sources */,
 				5DE46CD12892FA0C00F1B1EC /* RandomBytes.mm in Sources */,
 				5DBE5CDC2893A1A300C3D3E7 /* randombytes.c in Sources */,
+				5DBE5CDF2893A50700C3D3E7 /* pkce-challenge.cpp in Sources */,
 				5DD5BD72289300C00017AF43 /* base64.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

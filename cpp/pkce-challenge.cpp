@@ -1,4 +1,4 @@
-#include "random-bytes.h"
+#include "pkce-challenge.h"
 #include "base64.h"
 #include "randombytes.h"
 #include <jsi/jsi.h>
@@ -7,7 +7,7 @@
 using namespace facebook::jsi;
 using namespace std;
 
-namespace randombytes
+namespace pkcechallenge
 {
   void install(Runtime &jsiRuntime)
   {

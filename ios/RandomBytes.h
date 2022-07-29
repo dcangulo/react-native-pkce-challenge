@@ -1,5 +1,5 @@
 #import <React/RCTBridgeModule.h>
-#import "random-bytes.h"
+#import "pkce-challenge.h"
 
 @interface RandomBytes : NSObject <RCTBridgeModule>
 
