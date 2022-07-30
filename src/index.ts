@@ -1,4 +1,3 @@
-import asyncPkceChallenge from './async/async-pkce-challenge';
-import pkceChallenge from './sync/sync-pkce-challenge';
+import { asyncPkceChallenge, pkceChallenge } from './entry';
 
 export { asyncPkceChallenge, pkceChallenge };

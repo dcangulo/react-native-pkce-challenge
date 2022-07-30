@@ -6,25 +6,26 @@
 Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 
 ## API Compatibility
-Method               |iOS                |Android            |Web                |Windows            |macOS              |Expo
-:--------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
-`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:x:                |:white_check_mark: |:white_check_mark:
-`pkceChallenge`      |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
+Method               |iOS                |Android            |Web                |Windows            |macOS              |Expo               |Node.js
+:--------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
+`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
+`pkceChallenge`      |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
+
+## Under the hood
+Method               |iOS            |Android        |Web                |Windows     |macOS              |Expo        |Node.js
+:--------------------|:--------------|:--------------|:------------------|:-----------|:------------------|:-----------|:------------------
+`asyncPkceChallenge` |arc4random_buf |arc4random_buf |crypto.randombytes |Math.random |SecRandomCopyBytes |expo-random |crypto.randombytes
+`pkceChallenge`      |arc4random_buf |arc4random_buf |crypto.randombytes |Math.random |Math.random        |expo-random |crypto.randombytes
 
 ## Installation
 ```bash
 yarn add react-native-pkce-challenge
-npx pod-install # iOS Only
+npx pod-install ios # iOS Only
+npx pod-install macos # macOS Only
 ```
-
-## Installation (Expo)
-```bash
-expo install react-native-pkce-challenge expo-random buffer
-```
-> :bulb: If you use Expo you might not need this package. See: https://docs.expo.dev/versions/latest/sdk/auth-session/
 
 ## Usage
-### Asynchronous (Recommended)
+### Asynchronous
 ```js
 import { asyncPkceChallenge } from 'react-native-pkce-challenge';
 
