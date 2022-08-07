@@ -10,6 +10,6 @@ Pod::Spec.new do |spec|
   spec.platforms = { ios: '10.0', osx: '10.13' }
   spec.source = { git: package['repository']['url'], tag: "v#{spec.version}" }
   spec.ios.source_files = 'ios/**/*.{h,m,mm}', 'cpp/**/*.{h,c,cpp}'
-  spec.osx.source_files = 'macos/**/*.{h,m,mm}'
+  spec.osx.source_files = 'macos/**/*.{h,m,mm}', 'cpp/**/*.{h,c,cpp}'
   spec.dependency 'React-Core'
 end

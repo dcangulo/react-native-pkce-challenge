@@ -1,5 +1,5 @@
 // @ts-ignore
-import { NativeModules, Platform } from 'react-native';
+import { NativeModules } from 'react-native';
 import CryptoJS from 'crypto-js';
 
 export default function generateRandomBytes() {
@@ -16,24 +16,15 @@ export default function generateRandomBytes() {
         .getRandomBase64String(96);
 
       resolve(bytes);
+    } else if ((global as any).randomBytes) {
+      const bytes = (global as any).randomBytes();
+
+      resolve(bytes);
     } else {
-      Platform.select({
-        ios: async () => (global as any).randomBytes(),
-        android: async () => (global as any).randomBytes(),
-        macos: async () => {
-          const bytes = await NativeModules.RandomBytes.randomBytes();
+      const buffer = CryptoJS.lib.WordArray.random(96);
+      const bytes = buffer.toString(CryptoJS.enc.Base64);
 
-          return bytes;
-        },
-        default: async () => {
-          const buffer = CryptoJS.lib.WordArray.random(96);
-          const bytes = buffer.toString(CryptoJS.enc.Base64);
-
-          return bytes;
-        },
-      })().then((bytes: string) => {
-        resolve(bytes);
-      });
+      resolve(bytes);
     }
   });
 }

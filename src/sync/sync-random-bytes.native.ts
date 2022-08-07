@@ -1,5 +1,5 @@
 // @ts-ignore
-import { NativeModules, Platform } from 'react-native';
+import { NativeModules } from 'react-native';
 import CryptoJS from 'crypto-js';
 
 export default function generateRandomBytes(): string {
@@ -15,16 +15,14 @@ export default function generateRandomBytes(): string {
     return bytes;
   }
 
-  const bytes = Platform.select({
-    ios: () => (global as any).randomBytes(),
-    android: () => (global as any).randomBytes(),
-    default: () => {
-      const buffer = CryptoJS.lib.WordArray.random(96);
-      const bytes = buffer.toString(CryptoJS.enc.Base64);
+  if ((global as any).randomBytes) {
+    const bytes = (global as any).randomBytes();
 
-      return bytes;
-    },
-  })();
+    return bytes;
+  }
+
+  const buffer = CryptoJS.lib.WordArray.random(96);
+  const bytes = buffer.toString(CryptoJS.enc.Base64);
 
   return bytes;
 }
