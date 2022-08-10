@@ -1,6 +1,6 @@
 {
   "name": "react-native-pkce-challenge",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Proof Key for Code Exchange (PKCE) challenge generator for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -14,7 +14,10 @@
     "android",
     "ios",
     "macos",
-    "react-native-pkce-challenge.podspec"
+    "react-native-pkce-challenge.podspec",
+    "!android/build",
+    "!android/.cxx",
+    "!ios/build"
   ],
   "scripts": {
     "lint": "eslint . --ext .js,.ts",

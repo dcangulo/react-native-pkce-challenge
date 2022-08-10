@@ -1,5 +1,8 @@
 # Changelogs
 
+## 5.0.1 (2022-08-10)
+* Removed extra files published to npm.
+
 ## 5.0.0 (2022-08-10)
 * Rewrite to C++ with JSI.
 * Removed extra Expo dependencies.
