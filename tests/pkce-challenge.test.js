@@ -1,5 +1,5 @@
 const { test } = require('tap');
-const { pkceChallenge } = require('../lib/commonjs');
+const pkceChallenge = require('../lib/commonjs').default;
 
 test('Verifier length must be 128 characters', (t) => {
   const challenge = pkceChallenge();

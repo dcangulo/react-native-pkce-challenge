@@ -6,16 +6,14 @@
 Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 
 ## API Compatibility
-Method               |iOS                |Android            |Web                |Windows            |macOS              |Expo               |Node.js
-:--------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
-`asyncPkceChallenge` |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
-`pkceChallenge`      |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
+|iOS                |Android            |Web                |Windows            |macOS              |Expo              
+|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
+|:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
 
 ## Under the hood
-Method               |iOS            |Android        |Web                |Windows     |macOS              |Expo        |Node.js
-:--------------------|:--------------|:--------------|:------------------|:-----------|:------------------|:-----------|:------------------
-`asyncPkceChallenge` |arc4random_buf |arc4random_buf |crypto.randombytes |Math.random |SecRandomCopyBytes |expo-random |crypto.randombytes
-`pkceChallenge`      |arc4random_buf |arc4random_buf |crypto.randombytes |Math.random |Math.random        |expo-random |crypto.randombytes
+|iOS            |Android        |Web                |Windows     |macOS          |Expo        
+|:--------------|:--------------|:------------------|:-----------|:--------------|:-----------
+|arc4random_buf |arc4random_buf |crypto.randombytes |Math.random |arc4random_buf |expo-random 
 
 ## Installation
 ```bash
@@ -25,16 +23,8 @@ npx pod-install macos # macOS Only
 ```
 
 ## Usage
-### Asynchronous
 ```js
-import { asyncPkceChallenge } from 'react-native-pkce-challenge';
-
-const challenge = await asyncPkceChallenge();
-```
-
-### Synchronous
-```js
-import { pkceChallenge } from 'react-native-pkce-challenge';
+import pkceChallenge from 'react-native-pkce-challenge';
 
 const challenge = pkceChallenge();
 ```

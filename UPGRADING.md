@@ -1,6 +1,11 @@
 # Upgrading
 ## From 4.X.X to Unreleased
-For `Expo` only, run `yarn remove expo-random buffer`.
+* For `Expo` only, run `yarn remove expo-random buffer`.
+Make the following changes:
+```diff
+- import { asyncPkceChallenge } from 'react-native-pkce-challenge';
++ import pkceChallenge from 'react-native-pkce-challenge';
+```
 
 ## From 3.X.X to 4.X.X
 * No actions required.

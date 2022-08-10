@@ -3,6 +3,7 @@
 # Unreleased
 * Rewrite to C++ with JSI.
 * Removed extra Expo dependencies.
+* Removed `asyncPkceChallenge` support.
 
 # 4.0.1 (2022-07-12)
 * Fixed missing `macos` files.
