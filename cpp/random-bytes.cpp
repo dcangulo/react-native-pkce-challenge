@@ -20,7 +20,8 @@ namespace randombytes
                                                            const Value *arguments,
                                                            size_t count) -> Value
                                                         {
-                                                          vector<uint8_t> buffer(96, 0);
+                                                          int byteLength = arguments[0].getNumber();
+                                                          vector<uint8_t> buffer(byteLength, 0);
                                                           arc4random_buf(&buffer[0],
                                                                          buffer.size());
 

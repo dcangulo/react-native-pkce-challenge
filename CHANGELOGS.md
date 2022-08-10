@@ -1,5 +1,8 @@
 # Changelogs
 
+## 5.1.0 (2022-08-10)
+* Used global bytelength variable.
+
 ## 5.0.1 (2022-08-10)
 * Removed extra files published to npm.
 
