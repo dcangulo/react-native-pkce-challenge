@@ -16,8 +16,8 @@ export default function generateRandomBytes(): string {
     return bytes;
   }
 
-  if ((global as any).randomBytes) {
-    const bytes = (global as any).randomBytes();
+  if ((global as any).RNPkceChallenge) {
+    const bytes = (global as any).RNPkceChallenge.randomBytes();
 
     return bytes;
   }

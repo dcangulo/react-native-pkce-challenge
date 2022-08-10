@@ -32,6 +32,8 @@ namespace randombytes
                                                                                               encodedData));
                                                         });
 
-    jsiRuntime.global().setProperty(jsiRuntime, "randomBytes", move(randomBytes));
+    Object RNPkceChallenge = Object(jsiRuntime);
+    RNPkceChallenge.setProperty(jsiRuntime, "randomBytes", move(randomBytes));
+    jsiRuntime.global().setProperty(jsiRuntime, "RNPkceChallenge", move(RNPkceChallenge));
   }
 }
