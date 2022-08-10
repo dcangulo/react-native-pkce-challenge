@@ -1,6 +1,6 @@
 # Changelogs
 
-# Unreleased
+# 5.0.0 (2022-08-10)
 * Rewrite to C++ with JSI.
 * Removed extra Expo dependencies.
 * Removed `asyncPkceChallenge` support.
