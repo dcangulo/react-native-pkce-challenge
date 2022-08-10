@@ -1,6 +1,6 @@
 {
   "name": "react-native-pkce-challenge",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Proof Key for Code Exchange (PKCE) challenge generator for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
