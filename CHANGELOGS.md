@@ -1,11 +1,11 @@
 # Changelogs
 
-# 5.0.0 (2022-08-10)
+## 5.0.0 (2022-08-10)
 * Rewrite to C++ with JSI.
 * Removed extra Expo dependencies.
 * Removed `asyncPkceChallenge` support.
 
-# 4.0.1 (2022-07-12)
+## 4.0.1 (2022-07-12)
 * Fixed missing `macos` files.
 
 ## 4.0.0 (2022-07-10)
