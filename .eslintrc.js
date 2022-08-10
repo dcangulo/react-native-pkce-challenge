@@ -19,5 +19,6 @@ module.exports = {
   rules: {
     'jsx-quotes': ['error', 'prefer-single'],
     'react/jsx-filename-extension': 0,
+    '@typescript-eslint/no-shadow': 0,
   },
 };

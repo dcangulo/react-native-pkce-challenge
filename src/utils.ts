@@ -1,5 +1,7 @@
 import CryptoJS from 'crypto-js';
 
+const BYTE_LENGTH = 96;
+
 export interface IChallenge {
   codeChallenge: string;
   codeVerifier: string;
@@ -14,3 +16,5 @@ export function generateChallenge(verifier: string) {
 
   return base64UrlEncode(hash);
 }
+
+export { BYTE_LENGTH };

@@ -1,6 +1,6 @@
-import { base64UrlEncode, generateChallenge } from '../utils/common';
-import generateRandomBytes from './sync-random-bytes';
-import type { IChallenge } from '../utils/common';
+import { base64UrlEncode, generateChallenge } from './utils';
+import generateRandomBytes from './generate-random-bytes';
+import type { IChallenge } from './utils';
 
 function generateVerifier(): string {
   const bytes = generateRandomBytes();

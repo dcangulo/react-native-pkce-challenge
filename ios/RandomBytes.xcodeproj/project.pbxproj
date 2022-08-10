@@ -7,23 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		163CDE472087CAD3001065FB /* RandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEC93E1BFE4B1D00D468EB /* RandomBytes.m */; };
-		163CDE4A2087CAD3001065FB /* RandomBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73EEC93C1BFE4B1D00D468EB /* RandomBytes.h */; };
+		5DBE5CE928952A0800C3D3E7 /* RandomBytes.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE5CE828952A0700C3D3E7 /* RandomBytes.mm */; };
+		5DBE5CEF28952A1100C3D3E7 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE5CEB28952A1100C3D3E7 /* base64.cpp */; };
+		5DBE5CF228957EF400C3D3E7 /* random-bytes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DBE5CF028957EF400C3D3E7 /* random-bytes.cpp */; };
 		73EEC93D1BFE4B1D00D468EB /* RandomBytes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73EEC93C1BFE4B1D00D468EB /* RandomBytes.h */; };
-		73EEC93F1BFE4B1D00D468EB /* RandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEC93E1BFE4B1D00D468EB /* RandomBytes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		163CDE492087CAD3001065FB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				163CDE4A2087CAD3001065FB /* RandomBytes.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		73EEC9371BFE4B1D00D468EB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,21 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		163CDE4E2087CAD3001065FB /* libRandomBytes-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRandomBytes-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBE5CE828952A0700C3D3E7 /* RandomBytes.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RandomBytes.mm; sourceTree = "<group>"; };
+		5DBE5CEB28952A1100C3D3E7 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = base64.cpp; path = ../cpp/base64.cpp; sourceTree = "<group>"; };
+		5DBE5CED28952A1100C3D3E7 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = ../cpp/base64.h; sourceTree = "<group>"; };
+		5DBE5CF028957EF400C3D3E7 /* random-bytes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "random-bytes.cpp"; path = "../cpp/random-bytes.cpp"; sourceTree = "<group>"; };
+		5DBE5CF128957EF400C3D3E7 /* random-bytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "random-bytes.h"; path = "../cpp/random-bytes.h"; sourceTree = "<group>"; };
 		73EEC9391BFE4B1D00D468EB /* libRandomBytes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRandomBytes.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		73EEC93C1BFE4B1D00D468EB /* RandomBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomBytes.h; sourceTree = "<group>"; };
-		73EEC93E1BFE4B1D00D468EB /* RandomBytes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomBytes.m; sourceTree = "<group>"; };
-		73EEC94A1BFE4B1D00D468EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		163CDE482087CAD3001065FB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		73EEC9361BFE4B1D00D468EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,8 +51,11 @@
 			isa = PBXGroup;
 			children = (
 				73EEC93C1BFE4B1D00D468EB /* RandomBytes.h */,
-				73EEC93E1BFE4B1D00D468EB /* RandomBytes.m */,
-				73EEC9481BFE4B1D00D468EB /* RandomBytesTests */,
+				5DBE5CE828952A0700C3D3E7 /* RandomBytes.mm */,
+				5DBE5CEB28952A1100C3D3E7 /* base64.cpp */,
+				5DBE5CED28952A1100C3D3E7 /* base64.h */,
+				5DBE5CF028957EF400C3D3E7 /* random-bytes.cpp */,
+				5DBE5CF128957EF400C3D3E7 /* random-bytes.h */,
 				73EEC93A1BFE4B1D00D468EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,47 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				73EEC9391BFE4B1D00D468EB /* libRandomBytes.a */,
-				163CDE4E2087CAD3001065FB /* libRandomBytes-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		73EEC9481BFE4B1D00D468EB /* RandomBytesTests */ = {
-			isa = PBXGroup;
-			children = (
-				73EEC9491BFE4B1D00D468EB /* Supporting Files */,
-			);
-			path = RandomBytesTests;
-			sourceTree = "<group>";
-		};
-		73EEC9491BFE4B1D00D468EB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				73EEC94A1BFE4B1D00D468EB /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		163CDE452087CAD3001065FB /* RandomBytes-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 163CDE4B2087CAD3001065FB /* Build configuration list for PBXNativeTarget "RandomBytes-tvOS" */;
-			buildPhases = (
-				163CDE462087CAD3001065FB /* Sources */,
-				163CDE482087CAD3001065FB /* Frameworks */,
-				163CDE492087CAD3001065FB /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RandomBytes-tvOS";
-			productName = RNRandomBytes;
-			productReference = 163CDE4E2087CAD3001065FB /* libRandomBytes-tvOS.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		73EEC9381BFE4B1D00D468EB /* RandomBytes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73EEC94D1BFE4B1D00D468EB /* Build configuration list for PBXNativeTarget "RandomBytes" */;
@@ -162,53 +116,24 @@
 			projectRoot = "";
 			targets = (
 				73EEC9381BFE4B1D00D468EB /* RandomBytes */,
-				163CDE452087CAD3001065FB /* RandomBytes-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		163CDE462087CAD3001065FB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				163CDE472087CAD3001065FB /* RandomBytes.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		73EEC9351BFE4B1D00D468EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73EEC93F1BFE4B1D00D468EB /* RandomBytes.m in Sources */,
+				5DBE5CE928952A0800C3D3E7 /* RandomBytes.mm in Sources */,
+				5DBE5CEF28952A1100C3D3E7 /* base64.cpp in Sources */,
+				5DBE5CF228957EF400C3D3E7 /* random-bytes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		163CDE4C2087CAD3001065FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-			};
-			name = Debug;
-		};
-		163CDE4D2087CAD3001065FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-			};
-			name = Release;
-		};
 		73EEC94B1BFE4B1D00D468EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,15 +247,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		163CDE4B2087CAD3001065FB /* Build configuration list for PBXNativeTarget "RandomBytes-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				163CDE4C2087CAD3001065FB /* Debug */,
-				163CDE4D2087CAD3001065FB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		73EEC9341BFE4B1D00D468EB /* Build configuration list for PBXProject "RandomBytes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
