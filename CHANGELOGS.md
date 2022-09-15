@@ -1,5 +1,8 @@
 # Changelogs
 
+## 5.1.1 (2022-09-16)
+* Fixed `ndkVersion` for Apple M1 Mac.
+
 ## 5.1.0 (2022-08-10)
 * Used global bytelength variable.
 
