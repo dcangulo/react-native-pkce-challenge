@@ -4069,10 +4069,10 @@ react-devtools-core@^4.19.1:
     shell-quote "^1.6.1"
     ws "^7"
 
-react-native-builder-bob@^0.19.1:
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.19.1.tgz#aa63a99265c45c13d3a96da0ded1f307f099d8ab"
-  integrity sha512-wuDlnC9In9txUC9tn/vugiZW28V3rGDeS7201w2Jw5H/O0auljEv9orfY7OAG/ylZ9AfV3B9PKrmF9dHtYXP0w==
+react-native-builder-bob@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.20.0.tgz#f6ea6ba6baae59ebe30d5ed5d384b7e728fd68c5"
+  integrity sha512-PvH1ekERU6x+OOOrcLggG3AMpV1I+gM5lOb4dGuxLKh7iQCWQT+BvYBoX9X1tDKj0DKsqPRn1dl4/hMIpk7r8w==
   dependencies:
     "@babel/core" "^7.18.5"
     "@babel/plugin-proposal-class-properties" "^7.17.12"
