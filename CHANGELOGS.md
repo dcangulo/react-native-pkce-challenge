@@ -1,5 +1,8 @@
 # Changelogs
 
+## 5.2.0 (2023-05-06)
+* Added support for `ExpoCrypto` module. ([#264](https://github.com/dcangulo/react-native-pkce-challenge/pull/264) by [@Duell10111](https://github.com/Duell10111))
+
 ## 5.1.1 (2022-09-16)
 * Fixed `ndkVersion` for Apple M1 Mac.
 
