@@ -1,5 +1,5 @@
 # Upgrading
-## From 4.X.X to Unreleased
+## From 4.X.X to 5.X.X
 * For `Expo` only, run `yarn remove expo-random buffer`.
 
 Make the following changes:
