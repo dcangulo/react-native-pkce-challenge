@@ -12,8 +12,8 @@ Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 
 ## Under the hood
 |iOS            |Android        |Web                |Windows     |macOS          |Expo        
-|:--------------|:--------------|:------------------|:-----------|:--------------|:-----------
-|arc4random_buf |arc4random_buf |crypto.randombytes |Math.random |arc4random_buf |expo-random 
+|:--------------|:--------------|:------------------|:-----------|:--------------|:-------------------------
+|arc4random_buf |arc4random_buf |crypto.randombytes |Math.random |arc4random_buf |expo-random / expo-crypto
 
 ## Installation
 ```bash
