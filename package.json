@@ -17,6 +17,7 @@
     "react-native-pkce-challenge.podspec",
     "!android/build",
     "!android/.cxx",
+    "!android/.gradle",
     "!ios/build"
   ],
   "scripts": {
