@@ -3725,11 +3725,6 @@ jackspeak@^1.4.2:
   dependencies:
     cliui "^7.0.4"
 
-jetifier@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/jetifier/-/jetifier-2.0.0.tgz#699391367ca1fe7bc4da5f8bf691eb117758e4cb"
-  integrity sha512-J4Au9KuT74te+PCCCHKgAjyLlEa+2VyIAEPNCdE5aNkAJ6FAJcAqcdzEkSnzNksIa9NkGmC4tPiClk2e7tCJuQ==
-
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -4429,11 +4424,6 @@ punycode@^2.0.0, punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-q@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
-  integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
-
 queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
@@ -4452,10 +4442,10 @@ react-devtools-core@^4.19.1:
     shell-quote "^1.6.1"
     ws "^7"
 
-react-native-builder-bob@^0.21.3:
-  version "0.21.3"
-  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.21.3.tgz#6cdef5a020bae60286e72c6941df9a2d410e3f19"
-  integrity sha512-ZlEXWzgIRfRvQEDEYnoTeJ2og5zDbORB0BMGzpE34TxO22+DZeXH4yFYUtZLrUxvUi5WVo/1V2sVjjnUNZL85Q==
+react-native-builder-bob@^0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.23.1.tgz#d7810798fa9898c3631c6d76679a991c0d77cac6"
+  integrity sha512-LA+cRp72+lCpOG/AhUu/TuBnAZrntPEWLt6z6xlAK8K5WanXOSFL49eYRCnxVx9EUrOW3ix/Y0j4zbXAC1R+rw==
   dependencies:
     "@babel/core" "^7.18.5"
     "@babel/plugin-proposal-class-properties" "^7.17.12"
@@ -4476,8 +4466,6 @@ react-native-builder-bob@^0.21.3:
     prompts "^2.4.2"
     which "^2.0.2"
     yargs "^17.5.1"
-  optionalDependencies:
-    jetifier "^2.0.0"
 
 react-reconciler@^0.26.2:
   version "0.26.2"
