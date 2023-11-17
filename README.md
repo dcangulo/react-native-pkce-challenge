@@ -5,10 +5,6 @@
 
 Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 
-## Note 
-
-This package is a fork of [react-native-pkce-challenge] while upgrading `crypto-js` to `^4.2.0` to fix security vulnerabilities.
-
 ## API Compatibility
 |iOS                |Android            |Web                |Windows            |macOS              |Expo              
 |:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
