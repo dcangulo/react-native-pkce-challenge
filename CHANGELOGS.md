@@ -1,5 +1,8 @@
 # Changelogs
 
+## 5.2.1 (2023-11-30)
+* Updated `crypto-js` from `3.3.0` to `4.2.0`. ([#345](https://github.com/dcangulo/react-native-pkce-challenge/pull/345) by [@bill-pairaktaridis](https://github.com/bill-pairaktaridis))
+
 ## 5.2.0 (2023-05-06)
 * Added support for `ExpoCrypto` module. ([#264](https://github.com/dcangulo/react-native-pkce-challenge/pull/264) by [@Duell10111](https://github.com/Duell10111))
 
