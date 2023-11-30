@@ -50,11 +50,13 @@
   },
   "homepage": "https://github.com/dcangulo/react-native-pkce-challenge",
   "dependencies": {
-    "crypto-js": "3.3.0"
+    "base-64": "^1.0.0",
+    "js-sha256": "^0.10.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@types/base-64": "^1.0.2",
     "@types/crypto-js": "^4.1.1",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",

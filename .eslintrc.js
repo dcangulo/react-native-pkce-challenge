@@ -20,5 +20,7 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-single'],
     'react/jsx-filename-extension': 0,
     '@typescript-eslint/no-shadow': 0,
+    'no-plusplus': 0,
+    'no-bitwise': 0,
   },
 };
