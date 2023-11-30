@@ -64,4 +64,4 @@ android/keystores/debug.keystore
 lib/
 
 # tests
-.nyc_output
+.tap
