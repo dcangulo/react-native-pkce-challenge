@@ -10,11 +10,6 @@ Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 |:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
 |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
 
-## Under the hood
-|iOS            |Android        |Web                |Windows     |macOS          |Expo        
-|:--------------|:--------------|:------------------|:-----------|:--------------|:-------------------------
-|arc4random_buf |arc4random_buf |crypto.randombytes |Math.random |arc4random_buf |expo-random / expo-crypto
-
 ## Installation
 ```bash
 yarn add react-native-pkce-challenge
@@ -44,4 +39,4 @@ See [UPGRADING.md](UPGRADING.md)
 See [CHANGELOGS.md](CHANGELOGS.md)
 
 ## License
-Copyright © 2022 David Angulo, released under the MIT license, see [LICENSE](LICENSE).
+Copyright © 2023 David Angulo, released under the MIT license, see [LICENSE](LICENSE).

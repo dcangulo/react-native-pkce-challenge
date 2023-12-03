@@ -8,7 +8,7 @@ export interface IChallenge {
 }
 
 export function base64UrlEncode(str: string) {
-  return str.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+  return str.replace(/\+/g, '-').replace(/\//g, '_').replace(/[=]/g, '');
 }
 
 export function generateChallenge(verifier: string) {

@@ -1,11 +1,10 @@
-// @ts-ignore
 import { NativeModules } from 'react-native';
 import pkceChallenge from './pkce-challenge';
 
-const { RandomBytes } = NativeModules;
+const { PkceChallenge } = NativeModules;
 
-if (RandomBytes && typeof RandomBytes.install === 'function') {
-  RandomBytes.install();
+if (PkceChallenge && typeof PkceChallenge.install === 'function') {
+  PkceChallenge.install();
 }
 
 export default pkceChallenge;
