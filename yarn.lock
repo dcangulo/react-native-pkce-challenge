@@ -3175,14 +3175,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.21":
-  version: 17.0.21
-  resolution: "@types/react@npm:17.0.21"
+"@types/react@npm:18.2.41":
+  version: 18.2.41
+  resolution: "@types/react@npm:18.2.41"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: a590bd2e50e4ec0b1957388e198cf248bac3051e525e036901dea10f7d12203bf1c58350aa899e66494cbf8a60ee56402522273866c29748217f72552bb27d04
+  checksum: fcf4c598e5adc1be1dafaa5977ff7698b5b69c6b1473ce524a28d57fa04af3f1a1aa1193cf284542451d98ae5338d26270f8c6e1f7afda5bbbe6c3a4ba40b1d8
   languageName: node
   linkType: hard
 
@@ -9078,7 +9078,7 @@ __metadata:
     "@evilmartians/lefthook": ^1.5.0
     "@react-native/eslint-config": ^0.72.2
     "@types/base-64": ^1.0.2
-    "@types/react": ~17.0.21
+    "@types/react": ~18.2.41
     "@types/react-native": 0.70.0
     base-64: ^1.0.0
     commitlint: ^17.0.2
