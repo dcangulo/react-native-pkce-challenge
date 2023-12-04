@@ -13,6 +13,8 @@ jobs:
         run: yarn
       - name: Check types
         run: yarn typecheck
+      - name: Check build
+        run: yarn prepare
       - name: Run lint
         run: yarn lint
       - name: Run test
