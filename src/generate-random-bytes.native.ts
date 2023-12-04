@@ -1,4 +1,3 @@
-// @ts-ignore
 import { NativeModules } from 'react-native';
 import CryptoJS from 'crypto-js';
 import { BYTE_LENGTH } from './utils';
@@ -7,13 +6,15 @@ export default function generateRandomBytes(): string {
   const globalObject: any = global;
 
   if (globalObject?.ExpoModules?.ExpoRandom) {
-    const bytes = globalObject.ExpoModules.ExpoRandom.getRandomBase64String(BYTE_LENGTH);
+    const bytes =
+      globalObject.ExpoModules.ExpoRandom.getRandomBase64String(BYTE_LENGTH);
 
     return bytes;
   }
 
   if (globalObject?.ExpoModules?.ExpoCrypto) {
-    const bytes = globalObject.ExpoModules.ExpoCrypto.getRandomBase64String(BYTE_LENGTH);
+    const bytes =
+      globalObject.ExpoModules.ExpoCrypto.getRandomBase64String(BYTE_LENGTH);
 
     return bytes;
   }
@@ -30,8 +31,8 @@ export default function generateRandomBytes(): string {
     return bytes;
   }
 
-  if (globalObject?.RNPkceChallenge) {
-    const bytes = globalObject.RNPkceChallenge.randomBytes(BYTE_LENGTH);
+  if (globalObject?.PkceChallenge) {
+    const bytes = globalObject.PkceChallenge.getRandomBase64String(BYTE_LENGTH);
 
     return bytes;
   }

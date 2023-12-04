@@ -1,4 +1,3 @@
-<manifest
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.davidangulo.randombytes">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.pkcechallenge">
 </manifest>

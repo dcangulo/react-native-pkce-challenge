@@ -1,13 +1,13 @@
 #include <jni.h>
-#include "random-bytes.h"
+#include "react-native-pkce-challenge.h"
 
-extern "C" JNIEXPORT void JNICALL
-Java_com_davidangulo_randombytes_RandomBytesModule_nativeInstall(JNIEnv *env, jobject thiz, jlong jsi)
-{
+extern "C"
+JNIEXPORT void JNICALL
+Java_com_pkcechallenge_PkceChallengeModule_nativeInstall(JNIEnv *env, jobject thiz, jlong jsi) {
   auto runtime = reinterpret_cast<facebook::jsi::Runtime *>(jsi);
 
   if (runtime)
   {
-    randombytes::install(*runtime);
+    pkcechallenge::install(*runtime);
   }
 }
