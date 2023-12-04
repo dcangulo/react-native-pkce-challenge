@@ -51,13 +51,14 @@
   },
   "homepage": "https://github.com/dcangulo/react-native-pkce-challenge#readme",
   "dependencies": {
-    "crypto-js": "3.3.0"
+    "base-64": "^1.0.0",
+    "js-sha256": "^0.10.1"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.5.0",
     "@react-native/eslint-config": "^0.72.2",
-    "@types/crypto-js": "3.1.47",
+    "@types/base-64": "^1.0.2",
     "@types/react": "~17.0.21",
     "@types/react-native": "0.70.0",
     "commitlint": "^17.0.2",
@@ -108,7 +109,8 @@
           "trailingComma": "es5",
           "useTabs": false
         }
-      ]
+      ],
+      "no-bitwise": "off"
     }
   },
   "eslintIgnore": [

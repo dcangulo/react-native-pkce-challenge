@@ -1,6 +1,5 @@
 import { NativeModules } from 'react-native';
-import CryptoJS from 'crypto-js';
-import { BYTE_LENGTH } from './utils';
+import { fallbackRandomBase64String, BYTE_LENGTH } from './utils';
 
 export default function generateRandomBytes(): string {
   const globalObject: any = global;
@@ -37,8 +36,7 @@ export default function generateRandomBytes(): string {
     return bytes;
   }
 
-  const buffer = CryptoJS.lib.WordArray.random(BYTE_LENGTH);
-  const bytes = buffer.toString(CryptoJS.enc.Base64);
+  const bytes = fallbackRandomBase64String(BYTE_LENGTH);
 
   return bytes;
 }
