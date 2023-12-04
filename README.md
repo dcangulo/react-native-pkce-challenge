@@ -6,9 +6,15 @@
 Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 
 ## API Compatibility
-|iOS                |Android            |Web                |Windows            |macOS              |Expo              
-|:------------------|:------------------|:------------------|:------------------|:------------------|:------------------
-|:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark: |:white_check_mark:
+|Platform  |Support
+|:---------|:------
+|iOS       |🟢
+|Android   |🟢
+|Web       |🟢
+|Windows   |🟡
+|macOS     |🟢
+|Expo      |🟢
+|Node.js   |🟢
 
 ## Installation
 ```bash
