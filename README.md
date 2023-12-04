@@ -18,6 +18,7 @@ npx pod-install macos # macOS Only
 ```
 
 ## Usage
+### Generate PKCE Challenge Pair
 ```js
 import pkceChallenge from 'react-native-pkce-challenge';
 
@@ -30,6 +31,20 @@ The constant `challenge` will hold an object like the following:
   codeChallenge: 'XsRstqNrXT76Iop3uMoyyCQmaGthJbKKJwXBSoQXaRk',
   codeVerifier: 'OZOHUwLddiPyTFJulnUYnU9jsf7oyULflbFpwj40bE9S77iaeisGvzvaVvvPE7oO-xaV4skxwKDFBBV7JofVNxCgUSauqUDVcVjggE4-M6zthVUmeUrSAHatmIBm_P0_'
 }
+```
+### Generate Challenge
+```js
+import { generateChallenge } from 'react-native-pkce-challenge';
+
+generateChallenge(challenge.codeVerifier) === challenge.codeChallenge; // true
+```
+
+### Verify Challenge
+```js
+import { verifyChallenge } from 'react-native-pkce-challenge';
+
+verifyChallenge(challenge.codeVerifier, challenge.codeChallenge); // true
+verifyChallenge(challenge.codeVerifier, 'invalid challenge'); // false
 ```
 
 ## Upgrading

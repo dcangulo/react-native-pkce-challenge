@@ -5,15 +5,13 @@ export default function generateRandomBytes(): string {
   const globalObject: any = global;
 
   if (globalObject?.ExpoModules?.ExpoRandom) {
-    const bytes =
-      globalObject.ExpoModules.ExpoRandom.getRandomBase64String(BYTE_LENGTH);
+    const bytes = globalObject.ExpoModules.ExpoRandom.getRandomBase64String(BYTE_LENGTH);
 
     return bytes;
   }
 
   if (globalObject?.ExpoModules?.ExpoCrypto) {
-    const bytes =
-      globalObject.ExpoModules.ExpoCrypto.getRandomBase64String(BYTE_LENGTH);
+    const bytes = globalObject.ExpoModules.ExpoCrypto.getRandomBase64String(BYTE_LENGTH);
 
     return bytes;
   }

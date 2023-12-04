@@ -19,6 +19,12 @@ export function generateChallenge(verifier: string) {
   return base64UrlEncode(hash);
 }
 
+export function verifyChallenge(verifier: string, challenge: string) {
+  const correctChallenge = generateChallenge(verifier);
+
+  return correctChallenge === challenge;
+}
+
 export function fallbackRandomBase64String(byteLength: number) {
   const u8 = new Uint8Array(byteLength);
   let r: number;

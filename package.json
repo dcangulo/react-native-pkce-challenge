@@ -107,7 +107,8 @@
           "singleQuote": true,
           "tabWidth": 2,
           "trailingComma": "es5",
-          "useTabs": false
+          "useTabs": false,
+          "printWidth": 120
         }
       ],
       "no-bitwise": "off"
