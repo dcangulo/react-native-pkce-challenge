@@ -375,7 +375,7 @@ PODS:
   - React-jsinspector (0.72.7)
   - React-logger (0.72.7):
     - glog
-  - react-native-pkce-challenge (5.2.1):
+  - react-native-pkce-challenge (5.3.0):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - React-NativeModulesApple (0.72.7):
@@ -693,7 +693,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: c49502e5d02112247ee4526bc3ccfc891ae3eb9b
   React-jsinspector: 8baadae51f01d867c3921213a25ab78ab4fbcd91
   React-logger: 8edc785c47c8686c7962199a307015e2ce9a0e4f
-  react-native-pkce-challenge: 9421fe7395c10fc2cf26c14d80f69cc807462aae
+  react-native-pkce-challenge: b6bef756236c9ba59556b0de4abf30acb4998302
   React-NativeModulesApple: b6868ee904013a7923128892ee4a032498a1024a
   React-perflogger: 31ea61077185eb1428baf60c0db6e2886f141a5a
   React-RCTActionSheet: 392090a3abc8992eb269ef0eaa561750588fc39d
@@ -717,4 +717,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3439e1efb8228e3c2aa22c406d383b0383c13346
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.14.3

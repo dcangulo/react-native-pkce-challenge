@@ -1,9 +1,8 @@
-import { randomBytes } from 'crypto';
 import { BYTE_LENGTH } from './utils';
 
 export default function generateRandomBytes(): string {
-  const buffer = randomBytes(BYTE_LENGTH);
-  const bytes = buffer.toString('base64');
+  const buffer = window.crypto.getRandomValues(new Uint8Array(BYTE_LENGTH));
+  const bytes = btoa(String.fromCharCode(...new Uint8Array(buffer)));
 
   return bytes;
 }
