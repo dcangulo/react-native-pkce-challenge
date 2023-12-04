@@ -25,16 +25,11 @@ export function verifyChallenge(verifier: string, challenge: string) {
   return correctChallenge === challenge;
 }
 
-export function fallbackRandomBase64String(byteLength: number) {
-  const u8 = new Uint8Array(byteLength);
-  let r: number;
+export function getRandomBase64StringFallback(byteLength: number) {
+  console.warn('Native getRandomValues function not found. Falling back to insecure Math.random.');
 
-  u8.map((_, i) => {
-    if ((i & 0x03) === 0 || r === undefined) r = Math.random() * 0x100000000;
-    return (r >>> ((i & 0x03) << 3)) & 0xff;
-  });
-
-  const bytes = base64.encode(String.fromCharCode(...new Uint8Array(u8)));
+  const buffer = new Uint8Array(byteLength).map(() => Math.floor(Math.random() * 256));
+  const bytes = base64.encode(String.fromCharCode(...new Uint8Array(buffer)));
 
   return bytes;
 }
