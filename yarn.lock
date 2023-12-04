@@ -1702,12 +1702,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^17.0.2":
-  version: 17.8.1
-  resolution: "@commitlint/config-conventional@npm:17.8.1"
+"@commitlint/config-conventional@npm:^18.4.3":
+  version: 18.4.3
+  resolution: "@commitlint/config-conventional@npm:18.4.3"
   dependencies:
-    conventional-changelog-conventionalcommits: ^6.1.0
-  checksum: ce8ace1a13f3a797ed699ffa13dc46273a27e1dc3ae8a9d01492c0637a8592e4ed24bb32d9a43f8745a8690a52d77ea4a950d039977b0dbcbf834f8cbacf5def
+    conventional-changelog-conventionalcommits: ^7.0.2
+  checksum: bb6c1559979002e79c5e7c575f57fd713638523cdadfa61754eaabb8aad042d688c859e82ccf58589bb9aa2a4497e820702744095c9b82f6018fbb3b5d75d08d
   languageName: node
   linkType: hard
 
@@ -4615,12 +4615,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "conventional-changelog-conventionalcommits@npm:6.1.0"
+"conventional-changelog-conventionalcommits@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "conventional-changelog-conventionalcommits@npm:7.0.2"
   dependencies:
     compare-func: ^2.0.0
-  checksum: 4383a35cdf72f5964e194a1146e7f78276e301f73bd993b71627bb93586b6470d411b9613507ceb37e0fed0b023199c95e941541fa47172b4e6a7916fc3a53ff
+  checksum: e17ac5970ae09d6e9b0c3a7edaed075b836c0c09c34c514589cbe06554f46ed525067fa8150a8467cc03b1cf9af2073e7ecf48790d4f5ea399921b1cbe313711
   languageName: node
   linkType: hard
 
@@ -9557,7 +9557,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-native-pkce-challenge@workspace:."
   dependencies:
-    "@commitlint/config-conventional": ^17.0.2
+    "@commitlint/config-conventional": ^18.4.3
     "@evilmartians/lefthook": ^1.5.0
     "@react-native/eslint-config": ^0.74.0
     "@types/base-64": ^1.0.2
