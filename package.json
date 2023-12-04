@@ -57,7 +57,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.5.0",
-    "@react-native/eslint-config": "^0.72.2",
+    "@react-native/eslint-config": "^0.74.0",
     "@types/base-64": "^1.0.2",
     "@types/react": "~17.0.21",
     "@types/react-native": "0.70.0",
