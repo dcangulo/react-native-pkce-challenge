@@ -2675,7 +2675,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native/virtualized-lists@npm:^0.72.8":
+"@react-native/virtualized-lists@npm:^0.72.4, @react-native/virtualized-lists@npm:^0.72.8":
   version: 0.72.8
   resolution: "@react-native/virtualized-lists@npm:0.72.8"
   dependencies:
@@ -3235,12 +3235,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-native@npm:0.70.0":
-  version: 0.70.0
-  resolution: "@types/react-native@npm:0.70.0"
+"@types/react-native@npm:0.72.8":
+  version: 0.72.8
+  resolution: "@types/react-native@npm:0.72.8"
   dependencies:
+    "@react-native/virtualized-lists": ^0.72.4
     "@types/react": "*"
-  checksum: 0150a5520925ae009e49eb81e4ca528548ec118b95c363516362bba39ffc068f0df97c43e4543c10ac8f514a42e48cad312c9da49e37257c62180b36f921fa84
+  checksum: a9fdf0a11ed42f800eb646d038702d3652d0732aa017ecd8203fb2aee77a782fa7ef388433e5cfcb6ab658a1642e1286698fecedcbc379547e4aeefa681ed685
   languageName: node
   linkType: hard
 
@@ -9544,7 +9545,7 @@ __metadata:
     "@react-native/eslint-config": ^0.74.0
     "@types/base-64": ^1.0.2
     "@types/react": ~18.2.41
-    "@types/react-native": 0.70.0
+    "@types/react-native": 0.72.8
     base-64: ^1.0.0
     commitlint: ^18.4.3
     del-cli: ^5.0.0
