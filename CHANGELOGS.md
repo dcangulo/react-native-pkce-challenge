@@ -1,5 +1,11 @@
 # Changelogs
 
+## 5.3.0 (2023-12-04)
+* Added React Native 0.73+ support.
+* Reduced dependency size by `89.77%` from `487 kB` to `49.8 kb`.
+* Removed CMake warning during build.
+* Exposed `generateChallenge` and `verifyChallenge` APIs.
+
 ## 5.2.1 (2023-11-30)
 * Updated `crypto-js` from `3.3.0` to `4.2.0`. ([#345](https://github.com/dcangulo/react-native-pkce-challenge/pull/345) by [@bill-pairaktaridis](https://github.com/bill-pairaktaridis))
 
