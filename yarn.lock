@@ -1929,11 +1929,11 @@ __metadata:
   linkType: hard
 
 "@evilmartians/lefthook@npm:^1.5.0":
-  version: 1.5.5
-  resolution: "@evilmartians/lefthook@npm:1.5.5"
+  version: 1.5.7
+  resolution: "@evilmartians/lefthook@npm:1.5.7"
   bin:
     lefthook: bin/index.js
-  checksum: bc7728198d94ca8c603d08a293640df0823fccf34b229ef0fd834f6e4adc116e96470c0929b6025899a0287f6dc29a430e22602d91501d6778523b9099f06462
+  checksum: 72ee394263477282560a6d398cf39712bf68ca0a7cccdea21989fee5c58cf66508804ba3ac273e7c4823e03b1af5de412d886f23f26224eacbaa50155c7a68a1
   conditions: (os=darwin | os=linux | os=win32) & (cpu=x64 | cpu=arm64 | cpu=ia32)
   languageName: node
   linkType: hard
