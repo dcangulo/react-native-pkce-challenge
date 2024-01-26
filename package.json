@@ -52,7 +52,7 @@
   "homepage": "https://github.com/dcangulo/react-native-pkce-challenge#readme",
   "dependencies": {
     "base-64": "^1.0.0",
-    "js-sha256": "^0.10.1"
+    "js-sha256": "^0.11.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^18.4.3",

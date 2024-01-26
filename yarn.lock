@@ -7334,10 +7334,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-sha256@npm:^0.10.1":
-  version: 0.10.1
-  resolution: "js-sha256@npm:0.10.1"
-  checksum: 6eb5c9f95aa902cec1930f036deb3bc664024b75fede456c0ac74b855797776c18620f47efec36787077a56ba2f3b8d6aacc7733ff8a2b5bb9ce6b655a35c5e6
+"js-sha256@npm:^0.11.0":
+  version: 0.11.0
+  resolution: "js-sha256@npm:0.11.0"
+  checksum: 742d34a0c6eb15247309f1c74889b5a51df01a96e4307375b420fbe973f2f25585012b4d3c8fa52a1b18546153d12587e6463bb725dc1bc58686da03e892c334
   languageName: node
   linkType: hard
 
@@ -9760,7 +9760,7 @@ __metadata:
     eslint: ^8.4.1
     eslint-config-prettier: ^9.1.0
     eslint-plugin-prettier: ^5.0.1
-    js-sha256: ^0.10.1
+    js-sha256: ^0.11.0
     pod-install: ^0.1.0
     prettier: ^3.1.0
     react: 18.2.0
