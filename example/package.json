@@ -20,7 +20,7 @@
     "@react-native/metro-config": "^0.73.2",
     "babel-plugin-module-resolver": "^5.0.0",
     "metro-react-native-babel-preset": "0.77.0",
-    "pod-install": "^0.1.0"
+    "pod-install": "^0.2.0"
   },
   "engines": {
     "node": ">=16"
