@@ -3394,10 +3394,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/web@npm:^0.0.135":
-  version: 0.0.135
-  resolution: "@types/web@npm:0.0.135"
-  checksum: f46b48e8d0e77b0b15d0f8aacf7f3cd49998dca2fa7895611fcefed404a85da6a557e59a13b1a5a2ce5433fb8f0b3573dbf8c240eb9250f678b96ca7e18b4bde
+"@types/web@npm:^0.0.138":
+  version: 0.0.138
+  resolution: "@types/web@npm:0.0.138"
+  checksum: bddfc894b9acf8308a67650b550362ce090e00bf91d282127595389469c3bc56801c802e62d30171fa2b2f3846bde7f356ec58b81765a06736de4b14b1a22483
   languageName: node
   linkType: hard
 
@@ -9752,7 +9752,7 @@ __metadata:
     "@types/base-64": ^1.0.2
     "@types/react": ~18.2.41
     "@types/react-native": 0.72.8
-    "@types/web": ^0.0.135
+    "@types/web": ^0.0.138
     base-64: ^1.0.0
     commitlint: ^18.4.3
     del-cli: ^5.0.0
