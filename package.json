@@ -43,7 +43,10 @@
     "jsi",
     "c++"
   ],
-  "repository": "https://github.com/dcangulo/react-native-pkce-challenge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcangulo/react-native-pkce-challenge.git"
+  },
   "author": "David Angulo <hello@davidangulo.xyz> (https://www.davidangulo.xyz)",
   "license": "MIT",
   "bugs": {
