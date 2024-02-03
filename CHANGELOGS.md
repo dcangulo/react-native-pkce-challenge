@@ -1,5 +1,9 @@
 # Changelogs
 
+# 5.3.1 (2024-02-03)
+* Fixed Android build issues on Windows.
+* Fixed C++ JSI build issues. ([#405](https://github.com/dcangulo/react-native-pkce-challenge/pull/405) by [@cavanierc](https://github.com/cavanierc))
+
 ## 5.3.0 (2023-12-04)
 * Added React Native 0.73+ support.
 * Reduced dependency size by `89.77%` from `487 kB` to `49.8 kb`.
