@@ -2901,89 +2901,89 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tapjs/after-each@npm:1.1.18":
-  version: 1.1.18
-  resolution: "@tapjs/after-each@npm:1.1.18"
+"@tapjs/after-each@npm:1.1.19":
+  version: 1.1.19
+  resolution: "@tapjs/after-each@npm:1.1.19"
   dependencies:
     function-loop: ^4.0.0
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 879a3ab864eb9f3d6b27db0cff79ea72e586b9605f6050a0cca127bd84c083cdb8874a2ea9161e45aa0e32b767a06c61aab60c1b11b80e0eb9ccfee9a7f15b61
+    "@tapjs/core": 1.5.1
+  checksum: 628e9ff26dd8074d149d0e036732698c6b0eeb737e0c61b9073192d1d283eb1f802374a6865eaa9d4ba3953503effa62cbab1aa257c3c85fe70301764c3a93a1
   languageName: node
   linkType: hard
 
-"@tapjs/after@npm:1.1.18":
-  version: 1.1.18
-  resolution: "@tapjs/after@npm:1.1.18"
+"@tapjs/after@npm:1.1.19":
+  version: 1.1.19
+  resolution: "@tapjs/after@npm:1.1.19"
   dependencies:
     is-actual-promise: ^1.0.0
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 5d34574d27db1e0ce49354ec74d952df29559a158ac5e723306c1c00abc4b0690df7bb3c001bd096df4235f6ee5b3e49e680d8a9f39724965c841bc823510231
+    "@tapjs/core": 1.5.1
+  checksum: 9340909ea0cc928b763b6e41fd0be513c9b70432d13dfdfa1a8b96a3b3f592fa4af82d32c205dc0d5f86ef66005b362f38589b08d0ac2ba453820bede9d7b8dc
   languageName: node
   linkType: hard
 
-"@tapjs/asserts@npm:1.1.18":
-  version: 1.1.18
-  resolution: "@tapjs/asserts@npm:1.1.18"
+"@tapjs/asserts@npm:1.1.19":
+  version: 1.1.19
+  resolution: "@tapjs/asserts@npm:1.1.19"
   dependencies:
     "@tapjs/stack": 1.2.7
     is-actual-promise: ^1.0.0
     tcompare: 6.4.5
     trivial-deferred: ^2.0.0
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 0bfbbe0e9f8e8c8f43fe2680f623f46ffcb3ae6e0f36f5e8c8f3d6b137aeeca889bef427e677dccb88dae60b5f0da8838407cdc0c9bb7525895b780b8bcb3dfe
+    "@tapjs/core": 1.5.1
+  checksum: 10adac3d69031d53e61c9c0b1af5156458a66845229bb096dd78df432014f32d9b47fd796c530c9cb23794c60198482522989b1c6ac32560c56a82e0d87d01f3
   languageName: node
   linkType: hard
 
-"@tapjs/before-each@npm:1.1.18":
-  version: 1.1.18
-  resolution: "@tapjs/before-each@npm:1.1.18"
+"@tapjs/before-each@npm:1.1.19":
+  version: 1.1.19
+  resolution: "@tapjs/before-each@npm:1.1.19"
   dependencies:
     function-loop: ^4.0.0
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 0cd6fb12feaa096cae6db60432fcfefe62880a97f86ac8419d9fb528def50fc65a07416382f7e01b561f669c1368c8550cf98137c4c84bf33ae0f48f6257d5b5
+    "@tapjs/core": 1.5.1
+  checksum: a908e28f2c1233dc83d26f4491e02729ae4641c5d4023b539c75431c8f8532861e3c3b10c21ed79afc54417810942e1b2044fbb7f7e810d5f5b082cfe0657676
   languageName: node
   linkType: hard
 
-"@tapjs/before@npm:1.1.18":
-  version: 1.1.18
-  resolution: "@tapjs/before@npm:1.1.18"
+"@tapjs/before@npm:1.1.19":
+  version: 1.1.19
+  resolution: "@tapjs/before@npm:1.1.19"
   dependencies:
     is-actual-promise: ^1.0.0
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 1a88514e57e04a8e39cb1a5c777a35cabe2e83987eca3d7d3b9c92bdde26384d5308661f2d842f4d2e7789c4e1a6f8a23898032df25c8a914969e0dc38c61037
+    "@tapjs/core": 1.5.1
+  checksum: 149832338501ece122d5d88f355e4c18a0752e59f625548a13b95301d85b6f00bfff111175340ef14acfe8562c99331b21252bb22bb0bcf1551ad5c9f8743927
   languageName: node
   linkType: hard
 
-"@tapjs/config@npm:2.4.15":
-  version: 2.4.15
-  resolution: "@tapjs/config@npm:2.4.15"
+"@tapjs/config@npm:2.4.16":
+  version: 2.4.16
+  resolution: "@tapjs/config@npm:2.4.16"
   dependencies:
-    "@tapjs/core": 1.5.0
-    "@tapjs/test": 1.4.0
+    "@tapjs/core": 1.5.1
+    "@tapjs/test": 1.4.1
     chalk: ^5.2.0
     jackspeak: ^2.3.6
     polite-json: ^4.0.1
     tap-yaml: 2.2.1
     walk-up-path: ^3.0.1
   peerDependencies:
-    "@tapjs/core": 1.5.0
-    "@tapjs/test": 1.4.0
-  checksum: e61721f2dd225a6f59a6897164c4cd15de4e2ecbb69b469248729593437303e9f7bb09d32cac6d1db5852a88bbb782f7fe88cc23125facaf4726416e0a45e231
+    "@tapjs/core": 1.5.1
+    "@tapjs/test": 1.4.1
+  checksum: adb8ee90330c73c4fad5ebe1afc1bc761d81da69fdaeb4490ea28569525d2a4e0acdda95abd7bd531159359a890de15fbf808eb3b54377cf27181d11e7e7dfba
   languageName: node
   linkType: hard
 
-"@tapjs/core@npm:1.5.0":
-  version: 1.5.0
-  resolution: "@tapjs/core@npm:1.5.0"
+"@tapjs/core@npm:1.5.1":
+  version: 1.5.1
+  resolution: "@tapjs/core@npm:1.5.1"
   dependencies:
-    "@tapjs/processinfo": ^3.1.6
+    "@tapjs/processinfo": ^3.1.7
     "@tapjs/stack": 1.2.7
-    "@tapjs/test": 1.4.0
+    "@tapjs/test": 1.4.1
     async-hook-domain: ^4.0.1
     diff: ^5.1.0
     is-actual-promise: ^1.0.0
@@ -2993,7 +2993,7 @@ __metadata:
     tap-yaml: 2.2.1
     tcompare: 6.4.5
     trivial-deferred: ^2.0.0
-  checksum: f3acabefd42dac54d904194e757dc62cd13c58406f5546a0f0663bc54b5e8d31ef2a023b59fbc44ed385fe22b6b6ffa73f3242b51bd459bf424a39079a5960d5
+  checksum: bb12854e4cfa1c06012a2fe8044ef8580bc62a0f2ce3ad0b0a44e8199b9cd48313573c55928d1cb913563f0641ce7fe81c127fe91c02ed1c3498554f18e53962
   languageName: node
   linkType: hard
 
@@ -3006,83 +3006,83 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tapjs/filter@npm:1.2.18":
-  version: 1.2.18
-  resolution: "@tapjs/filter@npm:1.2.18"
+"@tapjs/filter@npm:1.2.19":
+  version: 1.2.19
+  resolution: "@tapjs/filter@npm:1.2.19"
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 5a4bd8597de24268694db6cbe8267d3e3db39fbe05ecccd1668f213783ef1b15fdbf7f128f1340ce9e21cebc8ea330f495ad95630a13e27001399218cc8165b7
+    "@tapjs/core": 1.5.1
+  checksum: 339c4b7d1643d90d54ca06f4fdd1413c109e4ed28389485acdfa0e50c858ed31b28c45665e4b9726c18c52768fd6a75034ac9419ece1330748d407d443ad1b52
   languageName: node
   linkType: hard
 
-"@tapjs/fixture@npm:1.2.18":
-  version: 1.2.18
-  resolution: "@tapjs/fixture@npm:1.2.18"
+"@tapjs/fixture@npm:1.2.19":
+  version: 1.2.19
+  resolution: "@tapjs/fixture@npm:1.2.19"
   dependencies:
     mkdirp: ^3.0.0
     rimraf: ^5.0.5
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 7285399845ebb3954f57056545a0cb9c9e2fd998f0280dfddba11099e2c3160041724599397ea3e9dca70eaca4a53b9d6af15e2aa51220a64ad08e01e4964573
+    "@tapjs/core": 1.5.1
+  checksum: f64dfae68ed0308cec4a4c9f4c7fc1dc8513deeb602cc163be37bdd8208d498bda606bbf16081179413137c2e4c1ae41cc1d728d4a03f8f12624a10106df10cd
   languageName: node
   linkType: hard
 
-"@tapjs/intercept@npm:1.2.18":
-  version: 1.2.18
-  resolution: "@tapjs/intercept@npm:1.2.18"
+"@tapjs/intercept@npm:1.2.19":
+  version: 1.2.19
+  resolution: "@tapjs/intercept@npm:1.2.19"
   dependencies:
-    "@tapjs/after": 1.1.18
+    "@tapjs/after": 1.1.19
     "@tapjs/stack": 1.2.7
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: bccbd0bec97386c0572300661a7a861213fb6e65e1f32e1f434404adfb63b041851283ab1033b0284d457f5cf6a741c5724a1b62da705958fd4ac8592d573ea1
+    "@tapjs/core": 1.5.1
+  checksum: 4fa73c32a2ddc4d2935095294ac6558e01e4a9afc02815fc0cbe9cfb07af8a273d6e1191d4c148ef51a33255a919ceffbc2ee7dcc194e4d40ddce2f1061bdaac
   languageName: node
   linkType: hard
 
-"@tapjs/mock@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@tapjs/mock@npm:1.3.0"
+"@tapjs/mock@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@tapjs/mock@npm:1.3.1"
   dependencies:
-    "@tapjs/after": 1.1.18
+    "@tapjs/after": 1.1.19
     "@tapjs/stack": 1.2.7
     resolve-import: ^1.4.5
     walk-up-path: ^3.0.1
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 0d6bf4e1ebb0e6f85185efb8509db078633557d9c322da901e8ee40980ffcf819a4a891cb0764db2433bad3763c15ac4b43093c6740a5e0b32654a57ffda0adb
+    "@tapjs/core": 1.5.1
+  checksum: baf6a4c67eac50b115b141893e4f40db617d991ed590a46dac4b1ab971f255241c01366e46de8440c937e6122b89f610b2399ffdbf13e832db338fb8f468a4b5
   languageName: node
   linkType: hard
 
-"@tapjs/node-serialize@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@tapjs/node-serialize@npm:1.3.0"
+"@tapjs/node-serialize@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@tapjs/node-serialize@npm:1.3.1"
   dependencies:
     "@tapjs/error-serdes": 1.2.1
     "@tapjs/stack": 1.2.7
     tap-parser: 15.3.1
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 7df120f4cada8edca83bc7b66f678a3e4f3b2eefd0f21767eafb6ec450bf33a06334124c33bfc2b5780487f078c16f183c1da95cd114838c1bda43d0e3e945be
+    "@tapjs/core": 1.5.1
+  checksum: 85bf54192ee810123a94a0ad777d3d880dd38d4cd15eac166855e238b40b5ef1fe8e59372f6a65e549bb96ea7ad1c994f5601de4992b0411e35adfd7a24da433
   languageName: node
   linkType: hard
 
-"@tapjs/processinfo@npm:^3.1.6":
-  version: 3.1.6
-  resolution: "@tapjs/processinfo@npm:3.1.6"
+"@tapjs/processinfo@npm:^3.1.7":
+  version: 3.1.7
+  resolution: "@tapjs/processinfo@npm:3.1.7"
   dependencies:
     pirates: ^4.0.5
     process-on-spawn: ^1.0.0
     signal-exit: ^4.0.2
     uuid: ^8.3.2
-  checksum: f384cfef6648a08f68818266cc5b5bb844373e8a0fb6b997cd40fa88d3807d3922b2ac82cb3270cf89068e022230e7fa22357f041695b81a02e61fab41bfc571
+  checksum: 5b2eb72959d8724f2b2ff654ef7a50b6ca73b33e0a94f5f0b6d20401bfe03e85116fbd5438d906e38f0b4d3504030cbef5c45507d21002a1ff2f7f3296cc3c6f
   languageName: node
   linkType: hard
 
-"@tapjs/reporter@npm:1.3.16":
-  version: 1.3.16
-  resolution: "@tapjs/reporter@npm:1.3.16"
+"@tapjs/reporter@npm:1.3.17":
+  version: 1.3.17
+  resolution: "@tapjs/reporter@npm:1.3.17"
   dependencies:
-    "@tapjs/config": 2.4.15
+    "@tapjs/config": 2.4.16
     "@tapjs/stack": 1.2.7
     chalk: ^5.2.0
     ink: ^4.4.1
@@ -3096,23 +3096,23 @@ __metadata:
     tap-yaml: 2.2.1
     tcompare: 6.4.5
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 42a10b3a3265074d3502fde66442eb03d8ecd1b4eca2949ebae306413bddc2bbcabbcd8d674ac287a65e97f1a727a08984f6c5f73c207fc65eea4b30bae0d039
+    "@tapjs/core": 1.5.1
+  checksum: 040d6942aa01688730e95d577030dae6265bccfe5aac5c0b57cd1598abd5dbb9c57b6ebcd108d07d6781684e2c4b9751f84412f6214f56159ec236e9009f54ae
   languageName: node
   linkType: hard
 
-"@tapjs/run@npm:1.5.0":
-  version: 1.5.0
-  resolution: "@tapjs/run@npm:1.5.0"
+"@tapjs/run@npm:1.5.1":
+  version: 1.5.1
+  resolution: "@tapjs/run@npm:1.5.1"
   dependencies:
-    "@tapjs/after": 1.1.18
-    "@tapjs/before": 1.1.18
-    "@tapjs/config": 2.4.15
-    "@tapjs/processinfo": ^3.1.6
-    "@tapjs/reporter": 1.3.16
-    "@tapjs/spawn": 1.1.18
-    "@tapjs/stdin": 1.1.18
-    "@tapjs/test": 1.4.0
+    "@tapjs/after": 1.1.19
+    "@tapjs/before": 1.1.19
+    "@tapjs/config": 2.4.16
+    "@tapjs/processinfo": ^3.1.7
+    "@tapjs/reporter": 1.3.17
+    "@tapjs/spawn": 1.1.19
+    "@tapjs/stdin": 1.1.19
+    "@tapjs/test": 1.4.1
     c8: ^8.0.1
     chalk: ^5.3.0
     chokidar: ^3.5.3
@@ -3132,32 +3132,32 @@ __metadata:
     trivial-deferred: ^2.0.0
     which: ^4.0.0
   peerDependencies:
-    "@tapjs/core": 1.5.0
+    "@tapjs/core": 1.5.1
   bin:
     tap-run: dist/esm/index.js
-  checksum: bd5931b75171247783bf8ff080bffacc04466119df11bb77b4351ea5d823dfe120babe71725fdc956a8ee4b786d84f3ce0b93cef65765c8552a56fc217e7a1d9
+  checksum: 7170d04b8512cf24520a56758dffb686557fed1829b445094e106d53cfdfe263cd13436fa76d4fc8af55040265e21fc07b8169df3ccfe1fcb8e693c3c6b80da6
   languageName: node
   linkType: hard
 
-"@tapjs/snapshot@npm:1.2.18":
-  version: 1.2.18
-  resolution: "@tapjs/snapshot@npm:1.2.18"
+"@tapjs/snapshot@npm:1.2.19":
+  version: 1.2.19
+  resolution: "@tapjs/snapshot@npm:1.2.19"
   dependencies:
     is-actual-promise: ^1.0.0
     tcompare: 6.4.5
     trivial-deferred: ^2.0.0
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: c42c87f2b863b55f3a65b23201c78531db60ed191d2b42ef2531a5ad3a047e390be154493bfbf8dda6a9928c07d35170baf82e52e2fe866b49b2a0e0a1744dc4
+    "@tapjs/core": 1.5.1
+  checksum: b818c20387be5d99dc96eacff6ff908b5e432cc9ef0fd1ddd2f2b480737b5bd80787ba984590d0c45d058fa7187d4796d567c0438d7dc256c0da7cb193a975f0
   languageName: node
   linkType: hard
 
-"@tapjs/spawn@npm:1.1.18":
-  version: 1.1.18
-  resolution: "@tapjs/spawn@npm:1.1.18"
+"@tapjs/spawn@npm:1.1.19":
+  version: 1.1.19
+  resolution: "@tapjs/spawn@npm:1.1.19"
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 71cf00137e87cc317dce1db0526fce183fb2de77f9504200bb53f4834bbf8b2038d87f93d355b650f2b68e3aa537128dbd68fa1cff0aa169668f1aa957f8f75e
+    "@tapjs/core": 1.5.1
+  checksum: 613ab211bd909d679391386cee74323b872ea130735d909cb247961221ddb353267dfcefd8c64a0f8d19ce52deb6ca3cbed86805e887c3156a056c0e91114fc8
   languageName: node
   linkType: hard
 
@@ -3168,35 +3168,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tapjs/stdin@npm:1.1.18":
-  version: 1.1.18
-  resolution: "@tapjs/stdin@npm:1.1.18"
+"@tapjs/stdin@npm:1.1.19":
+  version: 1.1.19
+  resolution: "@tapjs/stdin@npm:1.1.19"
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 95e8c600d170622fb1bef4adb4028d319a8f008f3de94422ff4637a38a86ab4e7dcdf9f5ecaa4268f0d26ac1777cda9643cb33e39f141daa9253301c65fec1bd
+    "@tapjs/core": 1.5.1
+  checksum: 05b0110e6525da6e5b683f4d357e75ad0f770fbd0e03775d20974404d99f70f1853b1ae1e8703212c412a24db4423db07e6b4543bc79d91de2f81ea7fa7abdae
   languageName: node
   linkType: hard
 
-"@tapjs/test@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@tapjs/test@npm:1.4.0"
+"@tapjs/test@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@tapjs/test@npm:1.4.1"
   dependencies:
     "@isaacs/ts-node-temp-fork-for-pr-2009": ^10.9.5
-    "@tapjs/after": 1.1.18
-    "@tapjs/after-each": 1.1.18
-    "@tapjs/asserts": 1.1.18
-    "@tapjs/before": 1.1.18
-    "@tapjs/before-each": 1.1.18
-    "@tapjs/filter": 1.2.18
-    "@tapjs/fixture": 1.2.18
-    "@tapjs/intercept": 1.2.18
-    "@tapjs/mock": 1.3.0
-    "@tapjs/node-serialize": 1.3.0
-    "@tapjs/snapshot": 1.2.18
-    "@tapjs/spawn": 1.1.18
-    "@tapjs/stdin": 1.1.18
-    "@tapjs/typescript": 1.4.0
-    "@tapjs/worker": 1.1.18
+    "@tapjs/after": 1.1.19
+    "@tapjs/after-each": 1.1.19
+    "@tapjs/asserts": 1.1.19
+    "@tapjs/before": 1.1.19
+    "@tapjs/before-each": 1.1.19
+    "@tapjs/filter": 1.2.19
+    "@tapjs/fixture": 1.2.19
+    "@tapjs/intercept": 1.2.19
+    "@tapjs/mock": 1.3.1
+    "@tapjs/node-serialize": 1.3.1
+    "@tapjs/snapshot": 1.2.19
+    "@tapjs/spawn": 1.1.19
+    "@tapjs/stdin": 1.1.19
+    "@tapjs/typescript": 1.4.1
+    "@tapjs/worker": 1.1.19
     glob: ^10.3.10
     jackspeak: ^2.3.6
     mkdirp: ^3.0.0
@@ -3204,33 +3204,33 @@ __metadata:
     rimraf: ^5.0.5
     sync-content: ^1.0.1
     tap-parser: 15.3.1
-    tshy: ^1.2.2
+    tshy: ^1.11.1
     typescript: 5.2
   peerDependencies:
-    "@tapjs/core": 1.5.0
+    "@tapjs/core": 1.5.1
   bin:
     generate-tap-test-class: scripts/build.mjs
-  checksum: ab19ff5ffb862e1a7eb3245130dfef2fee3820b294e2d1d8e2aed4767384e80a806e7de481fc10d6e9b18c2e8a2043b6059c3b1cf69089f393594e83c1112986
+  checksum: 3dd82200d80922a8c5d6f19b3b847132406d831a858f79f1434f1eb2989b7da89abfbc8442e47cbe13b09051afed57e77618c287840b5bf4583269af9f9ac50c
   languageName: node
   linkType: hard
 
-"@tapjs/typescript@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@tapjs/typescript@npm:1.4.0"
+"@tapjs/typescript@npm:1.4.1":
+  version: 1.4.1
+  resolution: "@tapjs/typescript@npm:1.4.1"
   dependencies:
     "@isaacs/ts-node-temp-fork-for-pr-2009": ^10.9.5
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: 6722f21bda45420200971cdef5fe2fafca5a633ba2801cb33657aae9ea068b55a44ee46bc541321725a91ed45da615ecd2412437505bb3db5ea8f95567de36cc
+    "@tapjs/core": 1.5.1
+  checksum: 921f6e9376ed893664f559c19732be4bf79b8d309180606bbb94e15a38d70eb167608d66919499c813217e2c653d0248aa666e7767552f0eaa2dab123a2217b7
   languageName: node
   linkType: hard
 
-"@tapjs/worker@npm:1.1.18":
-  version: 1.1.18
-  resolution: "@tapjs/worker@npm:1.1.18"
+"@tapjs/worker@npm:1.1.19":
+  version: 1.1.19
+  resolution: "@tapjs/worker@npm:1.1.19"
   peerDependencies:
-    "@tapjs/core": 1.5.0
-  checksum: c6f9a52c84d44da84d72342ef97dc4c94a2684ab49aab4f9ab8c23d931c01bcb0a1ffd51c49a672a395f17976eb12b86cde7416a653b49e76613ec4479395287
+    "@tapjs/core": 1.5.1
+  checksum: 7be70f15e9b183e9955d1fb99fd407e17e619447a64fd04d4a08c885c7004e5ca566063c88a562a39266b2415b85b46e9b012b89f48f8a3ba5e7782eec26e280
   languageName: node
   linkType: hard
 
@@ -11013,31 +11013,31 @@ __metadata:
   linkType: hard
 
 "tap@npm:^18.6.1":
-  version: 18.7.0
-  resolution: "tap@npm:18.7.0"
+  version: 18.7.1
+  resolution: "tap@npm:18.7.1"
   dependencies:
-    "@tapjs/after": 1.1.18
-    "@tapjs/after-each": 1.1.18
-    "@tapjs/asserts": 1.1.18
-    "@tapjs/before": 1.1.18
-    "@tapjs/before-each": 1.1.18
-    "@tapjs/core": 1.5.0
-    "@tapjs/filter": 1.2.18
-    "@tapjs/fixture": 1.2.18
-    "@tapjs/intercept": 1.2.18
-    "@tapjs/mock": 1.3.0
-    "@tapjs/node-serialize": 1.3.0
-    "@tapjs/run": 1.5.0
-    "@tapjs/snapshot": 1.2.18
-    "@tapjs/spawn": 1.1.18
-    "@tapjs/stdin": 1.1.18
-    "@tapjs/test": 1.4.0
-    "@tapjs/typescript": 1.4.0
-    "@tapjs/worker": 1.1.18
+    "@tapjs/after": 1.1.19
+    "@tapjs/after-each": 1.1.19
+    "@tapjs/asserts": 1.1.19
+    "@tapjs/before": 1.1.19
+    "@tapjs/before-each": 1.1.19
+    "@tapjs/core": 1.5.1
+    "@tapjs/filter": 1.2.19
+    "@tapjs/fixture": 1.2.19
+    "@tapjs/intercept": 1.2.19
+    "@tapjs/mock": 1.3.1
+    "@tapjs/node-serialize": 1.3.1
+    "@tapjs/run": 1.5.1
+    "@tapjs/snapshot": 1.2.19
+    "@tapjs/spawn": 1.1.19
+    "@tapjs/stdin": 1.1.19
+    "@tapjs/test": 1.4.1
+    "@tapjs/typescript": 1.4.1
+    "@tapjs/worker": 1.1.19
     resolve-import: ^1.4.5
   bin:
     tap: dist/esm/run.mjs
-  checksum: 089fc266d860e553da41d9eba31c108f81289ddb7e5175c0908fe0ec4a105f2d9273e95c072774028b85c2181bcf42e2bfd2de821d19c549b502ad6029613067
+  checksum: 2575f57cd157c5e1547081c2ab600cae2231f290080b92df1abc0603b606a24dec089f45c93716f948d837955ba752930bfd8c60b1f9decffaa113d4e24349f0
   languageName: node
   linkType: hard
 
@@ -11213,7 +11213,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tshy@npm:^1.2.2, tshy@npm:^1.7.0":
+"tshy@npm:^1.11.1":
+  version: 1.11.1
+  resolution: "tshy@npm:1.11.1"
+  dependencies:
+    chalk: ^5.3.0
+    chokidar: ^3.5.3
+    foreground-child: ^3.1.1
+    mkdirp: ^3.0.1
+    polite-json: ^4.0.1
+    resolve-import: ^1.4.4
+    rimraf: ^5.0.1
+    sync-content: ^1.0.2
+    typescript: 5.2 || 5.3
+    walk-up-path: ^3.0.1
+  bin:
+    tshy: dist/esm/index.js
+  checksum: 31994a0a184a9424cf39524aa4ce2e4d1104dc32d1e8c5d0b205c8af5bc4a215d4e663ca2eec67ac45d35cc3d599371bb2b1d960e6dcad338cf61d34b5c6cc8e
+  languageName: node
+  linkType: hard
+
+"tshy@npm:^1.7.0":
   version: 1.8.1
   resolution: "tshy@npm:1.8.1"
   dependencies:
@@ -11468,13 +11488,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.3.3":
+"typescript@npm:5.2 || 5.3, typescript@npm:5.3.3":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 2007ccb6e51bbbf6fde0a78099efe04dc1c3dfbdff04ca3b6a8bc717991862b39fd6126c0c3ebf2d2d98ac5e960bcaa873826bb2bb241f14277034148f41f6a2
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@5.2 || 5.3#~builtin<compat/typescript>, typescript@patch:typescript@5.3.3#~builtin<compat/typescript>":
+  version: 5.3.3
+  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=14eedb"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: f61375590b3162599f0f0d5b8737877ac0a7bc52761dbb585d67e7b8753a3a4c42d9a554c4cc929f591ffcf3a2b0602f65ae3ce74714fd5652623a816862b610
   languageName: node
   linkType: hard
 
@@ -11485,16 +11515,6 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 07106822b4305de3f22835cbba949a2b35451cad50888759b6818421290ff95d522b38ef7919e70fb381c5fe9c1c643d7dea22c8b31652a717ddbd57b7f4d554
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@5.3.3#~builtin<compat/typescript>":
-  version: 5.3.3
-  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=14eedb"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: f61375590b3162599f0f0d5b8737877ac0a7bc52761dbb585d67e7b8753a3a4c42d9a554c4cc929f591ffcf3a2b0602f65ae3ce74714fd5652623a816862b610
   languageName: node
   linkType: hard
 
