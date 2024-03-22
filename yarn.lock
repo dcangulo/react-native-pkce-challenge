@@ -11268,58 +11268,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:1.12.2":
-  version: 1.12.2
-  resolution: "turbo-darwin-64@npm:1.12.2"
+"turbo-darwin-64@npm:1.13.0":
+  version: 1.13.0
+  resolution: "turbo-darwin-64@npm:1.13.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:1.12.2":
-  version: 1.12.2
-  resolution: "turbo-darwin-arm64@npm:1.12.2"
+"turbo-darwin-arm64@npm:1.13.0":
+  version: 1.13.0
+  resolution: "turbo-darwin-arm64@npm:1.13.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:1.12.2":
-  version: 1.12.2
-  resolution: "turbo-linux-64@npm:1.12.2"
+"turbo-linux-64@npm:1.13.0":
+  version: 1.13.0
+  resolution: "turbo-linux-64@npm:1.13.0"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:1.12.2":
-  version: 1.12.2
-  resolution: "turbo-linux-arm64@npm:1.12.2"
+"turbo-linux-arm64@npm:1.13.0":
+  version: 1.13.0
+  resolution: "turbo-linux-arm64@npm:1.13.0"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:1.12.2":
-  version: 1.12.2
-  resolution: "turbo-windows-64@npm:1.12.2"
+"turbo-windows-64@npm:1.13.0":
+  version: 1.13.0
+  resolution: "turbo-windows-64@npm:1.13.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:1.12.2":
-  version: 1.12.2
-  resolution: "turbo-windows-arm64@npm:1.12.2"
+"turbo-windows-arm64@npm:1.13.0":
+  version: 1.13.0
+  resolution: "turbo-windows-arm64@npm:1.13.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
 "turbo@npm:^1.10.7":
-  version: 1.12.2
-  resolution: "turbo@npm:1.12.2"
+  version: 1.13.0
+  resolution: "turbo@npm:1.13.0"
   dependencies:
-    turbo-darwin-64: 1.12.2
-    turbo-darwin-arm64: 1.12.2
-    turbo-linux-64: 1.12.2
-    turbo-linux-arm64: 1.12.2
-    turbo-windows-64: 1.12.2
-    turbo-windows-arm64: 1.12.2
+    turbo-darwin-64: 1.13.0
+    turbo-darwin-arm64: 1.13.0
+    turbo-linux-64: 1.13.0
+    turbo-linux-arm64: 1.13.0
+    turbo-windows-64: 1.13.0
+    turbo-windows-arm64: 1.13.0
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -11335,7 +11335,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: a889988310fbd088e241a4aeb1f5ea34a9dba231ab77cd6764dbe53a81e07ec1dde4d7123f543e06cc6cd653f350886424ccc9d883af645816e859d455042cf1
+  checksum: 6cf6a1665ea448c85f7397e6873dd540df781b29aaffb17458ee5735655d49ca9113848025cad52098a2f1e7e32a87dc599cb8c412f846f6796032c8dc1977b4
   languageName: node
   linkType: hard
 
