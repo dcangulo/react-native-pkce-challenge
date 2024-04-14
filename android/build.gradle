@@ -1,3 +1,4 @@
+import java.nio.file.Paths
 import org.apache.tools.ant.taskdefs.condition.Os
 
 buildscript {
@@ -11,13 +12,26 @@ buildscript {
   }
 }
 
-String toPlatformFileString(File path) {
-  def result = path.toString()
-  if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-    result = result.replace(File.separatorChar, '/' as char)
+static def findNodeModules(baseDir) {
+  def basePath = baseDir.toPath().normalize()
+  // Node"s module resolution algorithm searches up to the root directory,
+  // after which the base path will be null
+  while (basePath) {
+    def nodeModulesPath = Paths.get(basePath.toString(), "node_modules")
+    def reactNativePath = Paths.get(nodeModulesPath.toString(), "react-native")
+    if (nodeModulesPath.toFile().exists() && reactNativePath.toFile().exists()) {
+      def result = nodeModulesPath.toString()
+      if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        result = result.replace(File.separatorChar, '/' as char)
+      }
+      return result
+    }
+    basePath = basePath.getParent()
   }
-  return result
+  throw new GradleException("react-native-pkce-challenge: Failed to find node_modules/ path!")
 }
+
+def nodeModules = findNodeModules(projectDir)
 
 def isNewArchitectureEnabled() {
   return rootProject.hasProperty("newArchEnabled") && rootProject.getProperty("newArchEnabled") == "true"
@@ -67,7 +81,7 @@ android {
     externalNativeBuild {
       cmake {
         cppFlags "-O2 -frtti -fexceptions -Wall -fstack-protector-all"
-        arguments "-DNODE_MODULES_DIR=${toPlatformFileString(rootDir)}/../node_modules"
+        arguments "-DNODE_MODULES_DIR=${nodeModules}"
       }
     }
   }
