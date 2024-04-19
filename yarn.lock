@@ -3365,21 +3365,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.51":
-  version: 18.2.51
-  resolution: "@types/react@npm:18.2.51"
+"@types/react@npm:18.2.79":
+  version: 18.2.79
+  resolution: "@types/react@npm:18.2.79"
   dependencies:
     "@types/prop-types": "*"
-    "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 1ab49e51e6314cefb9a162e9ac3a15a0474c82a0737f12f3a9628ccba555ab6645d2449152e7a5fc3ff650a7139a4718715af2c5ae9bc46b0533e98036706f84
-  languageName: node
-  linkType: hard
-
-"@types/scheduler@npm:*":
-  version: 0.16.8
-  resolution: "@types/scheduler@npm:0.16.8"
-  checksum: 6c091b096daa490093bf30dd7947cd28e5b2cd612ec93448432b33f724b162587fed9309a0acc104d97b69b1d49a0f3fc755a62282054d62975d53d7fd13472d
+  checksum: 85aa96e0e88725c84d8fc5f04f10a4da6a1f507dde33557ac9cc211414756867721264bfefd9e02bae1288ce2905351d949b652b931e734ea24519ee5c625138
   languageName: node
   linkType: hard
 
