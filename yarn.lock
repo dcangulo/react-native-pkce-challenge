@@ -3365,21 +3365,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.51":
-  version: 18.2.51
-  resolution: "@types/react@npm:18.2.51"
+"@types/react@npm:18.3.0":
+  version: 18.3.0
+  resolution: "@types/react@npm:18.3.0"
   dependencies:
     "@types/prop-types": "*"
-    "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 1ab49e51e6314cefb9a162e9ac3a15a0474c82a0737f12f3a9628ccba555ab6645d2449152e7a5fc3ff650a7139a4718715af2c5ae9bc46b0533e98036706f84
-  languageName: node
-  linkType: hard
-
-"@types/scheduler@npm:*":
-  version: 0.16.8
-  resolution: "@types/scheduler@npm:0.16.8"
-  checksum: 6c091b096daa490093bf30dd7947cd28e5b2cd612ec93448432b33f724b162587fed9309a0acc104d97b69b1d49a0f3fc755a62282054d62975d53d7fd13472d
+  checksum: 6addfffcf6220157217fd1487d831b41e725e170887a83bd4379e00b67c553dbb7b283c5f4555102f56536539f1f712635d27e27f377d17c2c0f171b66bc2f2d
   languageName: node
   linkType: hard
 
@@ -9740,7 +9732,7 @@ __metadata:
     babel-plugin-module-resolver: ^5.0.0
     metro-react-native-babel-preset: 0.77.0
     pod-install: ^0.2.0
-    react: 18.2.0
+    react: 18.3.1
     react-native: 0.72.10
   languageName: unknown
   linkType: soft
@@ -9753,7 +9745,7 @@ __metadata:
     "@evilmartians/lefthook": ^1.5.0
     "@react-native/eslint-config": ^0.74.0
     "@types/base-64": ^1.0.2
-    "@types/react": ~18.2.41
+    "@types/react": ~18.3.0
     "@types/react-native": 0.72.8
     "@types/web": ^0.0.138
     base-64: ^1.0.0
@@ -9765,7 +9757,7 @@ __metadata:
     js-sha256: ^0.11.0
     pod-install: ^0.2.0
     prettier: ^3.1.0
-    react: 18.2.0
+    react: 18.3.1
     react-native: 0.72.10
     react-native-builder-bob: ^0.23.2
     tap: ^18.6.1
@@ -9864,7 +9856,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0, react@npm:^18.2.0":
+"react@npm:18.3.1":
+  version: 18.3.1
+  resolution: "react@npm:18.3.1"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: a27bcfa8ff7c15a1e50244ad0d0c1cb2ad4375eeffefd266a64889beea6f6b64c4966c9b37d14ee32d6c9fcd5aa6ba183b6988167ab4d127d13e7cb5b386a376
+  languageName: node
+  linkType: hard
+
+"react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
