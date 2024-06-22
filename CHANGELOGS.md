@@ -1,6 +1,9 @@
 # Changelogs
 
-# 5.3.1 (2024-02-03)
+## 5.3.2 (2024-06-22)
+* Fixed node modules directory for Android builds. ([#454](https://github.com/dcangulo/react-native-pkce-challenge/pull/454) by [@rahulpatel](https://github.com/rahulpatel))
+
+## 5.3.1 (2024-02-03)
 * Fixed Android build issues on Windows.
 * Fixed C++ JSI build issues. ([#405](https://github.com/dcangulo/react-native-pkce-challenge/pull/405) by [@cavanierc](https://github.com/cavanierc))
 
