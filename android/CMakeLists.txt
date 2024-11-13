@@ -4,7 +4,7 @@ project(PkceChallenge)
 set (CMAKE_VERBOSE_MAKEFILE ON)
 set (CMAKE_CXX_STANDARD 14)
 
-add_library(cpp
+add_library(react-native-pkce-challenge
             SHARED
             "${NODE_MODULES_DIR}/react-native/ReactCommon/jsi/jsi/jsi.cpp"
             ../cpp/react-native-pkce-challenge.cpp

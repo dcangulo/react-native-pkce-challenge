@@ -5,7 +5,7 @@
 #define PKCECHALLENGE_H
 
 namespace pkcechallenge {
-  void install(facebook::jsi::Runtime &jsiRuntime);
+  std::string getRandomBase64String(double byte_length);
 }
 
 #endif /* PKCECHALLENGE_H */

@@ -17,10 +17,16 @@ Proof Key for Code Exchange (PKCE) challenge generator for React Native.
 |Node.js   |🟢
 
 ## Installation
+### New Arch
 ```bash
 yarn add react-native-pkce-challenge
-npx pod-install ios # iOS Only
-npx pod-install macos # macOS Only
+npx pod-install
+```
+
+### Old Arch
+```bash
+yarn add react-native-pkce-challenge@5.3.2
+npx pod-install
 ```
 
 ## Usage
@@ -60,4 +66,4 @@ See [UPGRADING.md](UPGRADING.md)
 See [CHANGELOGS.md](CHANGELOGS.md)
 
 ## License
-Copyright © 2023 David Angulo, released under the MIT license, see [LICENSE](LICENSE).
+Copyright © 2024 David Angulo, released under the MIT license, see [LICENSE](LICENSE).
