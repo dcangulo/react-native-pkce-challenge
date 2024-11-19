@@ -1,5 +1,6 @@
 import { NativeModules } from 'react-native';
 import { getRandomBase64StringFallback, BYTE_LENGTH } from './utils';
+import PkceChallenge from './NativePkceChallenge';
 
 export default function generateRandomBytes(): string {
   const globalObject: any = global;
@@ -20,8 +21,8 @@ export default function generateRandomBytes(): string {
     return NativeModules.ExpoCrypto.getRandomBase64String(BYTE_LENGTH);
   }
 
-  if (globalObject?.PkceChallenge) {
-    return globalObject.PkceChallenge.getRandomBase64String(BYTE_LENGTH);
+  if (PkceChallenge?.getRandomBase64String) {
+    return PkceChallenge.getRandomBase64String(BYTE_LENGTH);
   }
 
   return getRandomBase64StringFallback(BYTE_LENGTH);

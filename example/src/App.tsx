@@ -1,18 +1,12 @@
-import * as React from 'react';
-
 import { StyleSheet, View, Text } from 'react-native';
 import pkceChallenge from 'react-native-pkce-challenge';
 
+const result = pkceChallenge();
+
 export default function App() {
-  const [result, setResult] = React.useState<string | undefined>();
-
-  React.useEffect(() => {
-    setResult(JSON.stringify(pkceChallenge()));
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: {JSON.stringify(result)}</Text>
     </View>
   );
 }
