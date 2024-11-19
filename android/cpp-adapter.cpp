@@ -2,12 +2,9 @@
 #include "react-native-pkce-challenge.h"
 
 extern "C"
-JNIEXPORT void JNICALL
-Java_com_pkcechallenge_PkceChallengeModule_nativeInstall(JNIEnv *env, jobject thiz, jlong jsi) {
-  auto runtime = reinterpret_cast<facebook::jsi::Runtime *>(jsi);
+JNIEXPORT jstring JNICALL
+Java_com_pkcechallenge_PkceChallengeModule_nativeGetRandomBase64String(JNIEnv *env, jclass type, jdouble byte_length) {
+  std::string encoded_data = pkcechallenge::getRandomBase64String(byte_length);
 
-  if (runtime)
-  {
-    pkcechallenge::install(*runtime);
-  }
+  return env->NewStringUTF(encoded_data.c_str());
 }
