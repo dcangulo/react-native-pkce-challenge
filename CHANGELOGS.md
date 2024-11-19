@@ -1,5 +1,10 @@
 # Changelogs
 
+## 6.0.0 (2024-11-20)
+* Rewrite to Turbo Native Module.
+* Added support for New Architecture.
+* Dropped support for Old Architecture.
+
 ## 5.3.2 (2024-06-22)
 * Fixed node modules directory for Android builds. ([#454](https://github.com/dcangulo/react-native-pkce-challenge/pull/454) by [@rahulpatel](https://github.com/rahulpatel))
 
