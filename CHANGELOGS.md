@@ -1,5 +1,8 @@
 # Changelogs
 
+## 6.0.1 (2024-11-20)
+* Fixed missing `react-native.config.js` file.
+
 ## 6.0.0 (2024-11-20)
 * Rewrite to Turbo Native Module.
 * Added support for New Architecture.
