@@ -1,4 +1,7 @@
 # Upgrading
+## From 5.X.X to 6.X.X
+* Upgrade to React Native 0.76 or Expo SDK 52.
+
 ## From 4.X.X to 5.X.X
 * For `Expo` only, run `yarn remove expo-random buffer`.
 
