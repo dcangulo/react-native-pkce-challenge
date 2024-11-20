@@ -17,11 +17,9 @@ class PkceChallengeModule(reactContext: ReactApplicationContext) :
   // Example method
   // See https://reactnative.dev/docs/native-modules-android
   override fun getRandomBase64String(byteLength: Double): String {
-    val bytes = ByteArray(byteLength.toInt())
-    val secureRandom = SecureRandom()
-    secureRandom.nextBytes(bytes)
+    val manager = PkceChallengeManager()
 
-    return Base64.encodeToString(bytes, Base64.NO_WRAP)
+    return manager.getRandomBase64String(byteLength)
   }
 
   companion object {
