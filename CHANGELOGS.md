@@ -1,5 +1,10 @@
 # Changelogs
 
+## 6.1.0 (2024-12-15)
+* Bumped base64 from `2.rc.08` to `2.rc.09`.
+* Use built-in `btoa` method introduced in React Native 0.74 instead of a third-party dependency.
+* Re-implement Android method to C++.
+
 ## 6.0.1 (2024-11-20)
 * Fixed missing `react-native.config.js` file.
 
