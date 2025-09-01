@@ -1,5 +1,9 @@
 # Changelogs
 
+## 6.2.0 (2025-09-01)
+* Added React Native 0.80+ support.
+* Enable 16 KB page size for Android.
+
 ## 6.1.0 (2024-12-15)
 * Bumped base64 from `2.rc.08` to `2.rc.09`.
 * Use built-in `btoa` method introduced in React Native 0.74 instead of a third-party dependency.
