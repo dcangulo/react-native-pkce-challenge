@@ -1242,7 +1242,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-pkce-challenge (6.1.0):
+  - react-native-pkce-challenge (6.2.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1772,7 +1772,7 @@ SPEC CHECKSUMS:
   React-logger: addd140841248966c2547eb94836399cc1061f4d
   React-Mapbuffer: 029b5332e78af8c67c4b5e65edfc717068b8eac1
   React-microtasksnativemodule: f30949ee318ba90b9668de1e325b98838b9a4da2
-  react-native-pkce-challenge: a30a3ff6fa011b409e29b7b13ebcc41bf1f20fa1
+  react-native-pkce-challenge: f60ef070dbadc84c595038e53f007c3e1382ccc7
   React-nativeconfig: 470fce6d871c02dc5eff250a362d56391b7f52d6
   React-NativeModulesApple: 1586448c61a7c2bd4040cc03ccde66a72037e77e
   React-perflogger: c8860eaab4fe60d628b27bf0086a372c429fc74f
@@ -1801,8 +1801,8 @@ SPEC CHECKSUMS:
   ReactCodegen: a64e8f3a8bba0ecf88fce06c2874e021d55148f3
   ReactCommon: 7b9403030ff3430ccffed63cd25c8aeab2a3ea7e
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
-  Yoga: c5b0e913b5b3b4cde588227c1402e747797061f3
+  Yoga: 96872ee462cfc43866ad013c8160d4ff6b85709b
 
 PODFILE CHECKSUM: 097db05b01fca882f0149ec29091a33138e62f7d
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
