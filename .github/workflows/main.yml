@@ -6,9 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup environment
         uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
       - name: Install dependencies
         run: yarn
       - name: Check types
